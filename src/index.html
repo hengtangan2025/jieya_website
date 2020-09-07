@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<%=require('html-loader!./common/head.html')%>-->
+<!--<div class="uk-container">-->
+<!--    <div class="uk-card uk-card-body uk-card-primary">-->
+<!--        <h3 class="uk-card-title">Example headline</h3>-->
+<!--        <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">Hover</button>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<a href="./page/my">1fg11</a>-->
+<!--<img src="./images/grade.png" alt="">-->
+<!--<img data-src="<%=require('./images/grade.png')%>" width="100" height="100" alt="" uk-img>-->
+<!--<%=require('html-loader!./common/foot.html')%>-->
+<nav class="uk-navbar-container uk-position-fixed uk-position-z-index uk-width-1-1" uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#">
+            <img src="./images/logo.png" class="image"/>
+        </a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li class="uk-active"><a href="#">首页</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">产品服务</a></li>
+            <li><a href="./page/policDynamics">政策动态</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <a href="#offcanvas-slide" class="uk-hidden@m uk-navbar-nav" uk-toggle uk-navbar-toggle-icon></a>
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">首页</a></li>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li><a href="./page/policDynamics">政策动态</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="">
+    <div uk-slideshow="animation: push;autoplay-interval: 4000;autoplay: true;max-height: 720;">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="./images/banner_1.png" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="./images/banner_2.png" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="./images/banner_3.png" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="./images/banner_4.png" alt="" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+               uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+               uk-slideshow-item="next"></a>
+            <div class="uk-position-bottom-center uk-position-small">
+                <ul class="uk-slideshow-nav uk-dotnav"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+            <div class="uk-width-1-2@m">
+                <div class="uk-card  uk-card-body">
+                    <div class="common_image">
+                        <img src="./images/product_1.png" alt="" class="index_image">
+                        <div>首页</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-body">
+                    <img src="./images/product_2.png" alt="" class="index_image">
+                    <div>首页</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        <div class="uk-grid-match uk-grid-small uk-text-center" uk-grid>
+            <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-body">
+                    <img src="./images/product_3.png" alt="" class="index_image">
+                    <div>首页</div>
+                </div>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-body">
+                    <img src="./images/product_4.png" alt="" class="index_image">
+                    <div>d</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        <ul class="uk-list uk-list-striped uk-align-center conten-border uk-list-large">
+            <li class="uk-text-center">1. 多样化服务功能，满足更多需求</li>
+            <li class="uk-text-center">心理测评、图文咨询、语音咨询、线下门诊、心理资讯、解压音频等</li>
+            <li class="uk-text-center">2. 组件化页面装修，满足个性展示</li>
+            <li class="uk-text-center">不同行业心理模版，一键应用，可提供定制服务，实现云心理服务端口</li>
+            <li class="uk-text-center">3. 多元化客户管理，服务更多用户</li>
+            <li class="uk-text-center">多维度统计用户基本情况、分级管理用户、可出具单用户或多用户详细总报告</li>
+            <li class="uk-text-center">4. 系统化团队管理，多咨询师管理</li>
+            <li class="uk-text-center">管理者可追踪并查看团队中单个或多个咨询师用户概况，数据化提升管理效率</li>
+        </ul>
+    </div>
+</div>
+<div class="uk-animation-toggle" tabindex="0">
+    <img class="uk-animation-scale-up index_image" src="./images/product_1.png" alt="">
+</div>
+<div id="foot">
+    <div class="uk-container index_foot">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-1-3@m uk-flex-first">
+                <div>
+                    <div>邮箱：jykj_u@163.com</div>
+                    <div>联系电话：(0571) 8895 3801</div>
+                    <div> 地址：浙江大学国家大学科技园</div>
+                </div>
+            </div>
+            <div class="uk-width-2-3@m">
+                <div class="uk-text-center" uk-grid>
+                    <div class="uk-width-1-3">
+                        <div class="uk-card"><img src="./images/xinfu.jpg" alt="" class="logo_image"></div>
+                    </div>
+                    <div class="uk-width-1-3">
+                        <div class="uk-card"><img src="./images/xinfu.jpg" alt="" class="logo_image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index_footer">
+            <a href="http://www.beian.miit.gov.cn/" style="color:#999;">浙ICP备19051125号</a>
+        </div>
+        <div class="index_footer">
+            Copyright 2020 by <span style="color: #fff">解压科技</span>. All rights reserved.
+        </div>
+    </div>
+</div>
+</body>
+</html>

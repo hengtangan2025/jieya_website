@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--头部-->
+<nav class="uk-navbar-container uk-position-fixed uk-position-z-index uk-width-1-1">
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#">
+            <img src="../../images/logo.png" class="image"/>
+        </a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">产品服务</a></li>
+            <li class="uk-active"><a href="#">政策动态</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <a href="#offcanvas-slide" class="uk-hidden@m uk-navbar-nav" uk-toggle uk-navbar-toggle-icon></a>
+    <div id="offcanvas-slide" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li class="uk-active"><a href="#">政策动态</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--轮播图-->
+<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="../../images/grade.png" alt="">
+            <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h2 class="uk-margin-remove">Center</h2>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--文章-->
+<div class="uk-container">
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+            <canvas width="300" height="300"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Left</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
