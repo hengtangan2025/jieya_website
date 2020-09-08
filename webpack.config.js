@@ -9,13 +9,13 @@ module.exports = {
         my: './src/js/my.js'
     },
     output: {
-        filename: 'js/app.[hash:10].js',
+        filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[hash:10].js',
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/style.[hash:10].css'
+            filename: 'css/style.[contenthash:10].css'
         }),
         new HtmlWebpackPlugin({
             chunks: ['index'],
@@ -23,20 +23,30 @@ module.exports = {
             template: 'src/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index', 'my'],
-            filename: 'page/my/index.html',
-            template: 'src/page/my/index.html'
+            chunks: ['index'],
+            filename: 'page/productService/index.html',
+            template: 'src/page/productService/index.html'
         }),
-        // new HtmlWebpackPlugin({
-        //     chunks: ['index', 'about'],
-        //     filename: 'page/about/index.html',
-        //     template: 'src/page/about/index.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     chunks: ['index', 'policDynamics'],
-        //     filename: 'page/policDynamics/index.html',
-        //     template: 'src/page/policDynamics/index.html'
-        // })
+        new HtmlWebpackPlugin({
+            chunks: ['index'],
+            filename: 'page/publicWelfare/index.html',
+            template: 'src/page/publicWelfare/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['index'],
+            filename: 'page/policDynamics/index.html',
+            template: 'src/page/policDynamics/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['index'],
+            filename: 'page/contact/index.html',
+            template: 'src/page/contact/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['index'],
+            filename: 'page/login/index.html',
+            template: 'src/page/login/index.html'
+        })
     ],
     optimization: {
         splitChunks: {
@@ -95,7 +105,8 @@ module.exports = {
                 options: {
                     esModule: false,
                     name: '[contenthash:10].[ext]',
-                    outputPath: 'images/'
+                    outputPath: 'images/',
+                    publicPath:'../images/'
                 }
             },
             {
@@ -136,12 +147,11 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join('dist'),
-        port: 8080,
+        port: 3000,
         historyApiFallback: true,
         overlay: true,
         hot: true,
         compress: true,
-        open: true,
-        host: '192.168.5.35'
+        host:'0.0.0.0'
     }
 };

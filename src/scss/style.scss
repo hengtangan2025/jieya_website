@@ -1,6 +1,5 @@
 // 1.  Your custom variables and variable overwrites.
 $global-link-color: #DA7D02;
-
 @import "compents/site.scss";
 // 2. 导入默认变量和可用混合函数。
 @import "~uikit/src/scss/variables-theme.scss";
