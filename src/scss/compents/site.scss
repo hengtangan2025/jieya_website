@@ -1,5 +1,9 @@
 @import "variables.scss";
 @import "theme.scss";
+.success_image{
+  width: 880px;
+  height: 640px;
+}
 .index_serve{
   //background-image: url("../images/product_1.png");
   background-size: 100% 100%;
@@ -13,7 +17,7 @@
   line-height: 5px;
 }
 .serve_background{
-  background-image: url("../images/server_2.jpg");
+  background-image: url("../images/server_2.png");
 }
 .server_image{
   width: 143px;
@@ -21,10 +25,6 @@
 }
  .uk-navbar-left .index_logo{
   padding: 0;
-}
-.index_center{
-  text-align: center;
-  color: #333;
 }
 .index_image {
   width: 236px;
@@ -63,11 +63,57 @@
   align-content: center;
 }
 .logo_image{
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
+}
+//首页css
+.banner_bottom_image{
+  width: 64px;
+  height: 64px;
+}
+.border_style{
+  border: 1px solid #d5d5d5;
+}
+.secion_hover:hover{
+  box-shadow: 1px 1px 8px #34A4B0;
+  border: none;
+}
+.server_container{
+  //background-image: url("../images/index_success_back.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 //政策动态css
+.head_image{
+  width: 380px;
+  height: 280px;
+}
 .policy_image{
   width: 220px;
   height: 300px;
+  background: #34A4B0;
+  padding: 10px;
+  border-radius: 12px;
+}
+.policy_content{
+  background: #34A4B0;
+  color: #ffff;
+  opacity: 0.69;
+}
+//公益事业css
+.welfare_image{
+  width: 240px !important;
+  height: 160px !important;
+}
+//login css
+.login_images{
+  width: 480px !important;
+  height: 400px !important;
+}
+//产品服务css
+.server_back{
+  background-image: url("../images/service_background1.png");
+  background-repeat:no-repeat;
+  height: 380px;
+  background-size: 100% 100%;
 }

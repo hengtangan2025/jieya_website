@@ -83,6 +83,7 @@ module.exports = {
                     },
                     // Translates CSS into CommonJS
                     'css-loader',
+                    'postcss-loader',
                     // Compiles Sass to CSS
                     'sass-loader'
                 ]
@@ -136,6 +137,14 @@ module.exports = {
                                     tag: 'img',
                                     attribute: 'data-srcset',
                                     type: 'srcset',
+                                },
+                                {
+                                    tag: 'a',
+                                    attribute: 'href',
+                                    type: 'src',
+                                    filter: (tag, attribute, attributes, resourcePath) => {
+                                        return attributes.href && /\.(png|jpe?g|gif|svg)$/.test(attributes.href);
+                                    }
                                 }
                             ]
                         }

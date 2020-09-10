@@ -2,48 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 </head>
 <body>
 <!--头部-->
-<div id="header">
+<div class="fixed-top">
     <nav class="nav_background uk-position-fixed uk-position-z-index uk-width-1-1 uk-padding-large uk-padding-remove-vertical"
          uk-navbar="mode: click">
         <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo index_logo" href="#">
+            <a class="uk-navbar-item uk-logo index_logo" href="/">
                 <img src="../../images/logo.png" class="image"/>
             </a>
             <div class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-left">
                 <div>解压科技</div>
                 <div class="index_text">jieyadfdklfdj</div>
             </div>
-            <ul class="uk-navbar-nav uk-visible@m ">
-                <li ><a href="../../index.html">首页</a></li>
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="/">首页</a></li>
                 <li><a href="../../page/productService">产品服务</a></li>
-                <li class="uk-active"><a href="#">公益事项</a></li>
+                <li class="uk-active"><a href="../../page/publicWelfare">公益事业</a></li>
                 <li><a href="../../page/policDynamics">政策动态</a></li>
                 <li><a href="../../page/contact">联系我们</a></li>
             </ul>
         </div>
         <div class="uk-navbar-right">
-            <button class="index_login uk-visible@m">登录</button>
-        </div>
-        <a href="#offcanvas-slide" class="uk-hidden@m uk-navbar-nav" uk-toggle uk-navbar-toggle-icon></a>
-        <div id="offcanvas-slide" uk-offcanvas>
-            <div class="uk-offcanvas-bar">
-                <ul class="uk-nav uk-nav-default">
-                    <li ><a href="../../index.html">首页</a></li>
-                    <li><a href="../../page/productService">产品服务</a></li>
-                    <li class="uk-active"><a href="#">公益事项</a></li>
-                    <li><a href="../../page/policDynamics">政策动态</a></li>
-                    <li><a href="../../page/contact">联系我们</a></li>
-                    <li><a href="../../page/login">登录</a></li>
-                </ul>
-            </div>
+            <a class="uk-button uk-button-default uk-light uk-button-small uk-border-rounded uk-visible@m"
+               href="../../page/login">
+                登 录
+            </a>
+            <a href="#offcanvas-nav-primary" class="uk-hidden@m uk-navbar-nav" uk-toggle uk-navbar-toggle-icon></a>
         </div>
     </nav>
 </div>
-
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true;mode:reveal">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li><a href="/">首页</a></li>
+            <li><a href="../../page/productService">产品服务</a></li>
+            <li class="uk-active"><a href="../../page/publicWelfare">公益事业</a></li>
+            <li><a href="../../page/policDynamics">政策动态</a></li>
+            <li><a href="../../page/contact">联系我们</a></li>
+            <li><a href="../../page/login">登录</a></li>
+        </ul>
+    </div>
+</div>
 <!--/头部-->
+<!--section-->
+<div class="uk-section">
+    <div class="uk-container uk-padding">
+        <div class="uk-h3">滴水公益合作报道</div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <div uk-grid uk-lightbox="animation: slide">
+                    <div class="uk-align-center">
+                        <a class="uk-inline " href="../../images/product_1.png">
+                            <img src="../../images/product_1.png" alt="" uk-cover class="welfare_image">
+                            <canvas width="200" height="200"></canvas>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <a class="uk-panel uk-panel-box uk-text-truncate uk-h4">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt.</a>
+                    <p>
+                        7月31日上午，解压心服与滴水公益在杭州市计划生育协会的会员之家举行公益事业战略合作签约仪式。以滴水公益的5A级公益慈善组织资质，以及解压心服的科技团队优势，就心理公益事业达成共识。解压科技联合创始人兼CEO董作军、滴水公益创始人花亦缺出席仪式并作为双方代表签订了战略合作协议。</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-h3">新冠疫情期间公益咨询</div>
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <div uk-grid uk-lightbox="animation: slide">
+                    <div class="uk-align-center">
+                        <a class="uk-inline " href="../../images/product_1.png">
+                            <img src="../../images/product_1.png" alt="" uk-cover class="welfare_image">
+                            <canvas width="200" height="200"></canvas>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <a class="uk-panel uk-panel-box uk-text-truncate uk-h4">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt.</a>
+                    <p>
+                        7月31日上午，解压心服与滴水公益在杭州市计划生育协会的会员之家举行公益事业战略合作签约仪式。以滴水公益的5A级公益慈善组织资质，以及解压心服的科技团队优势，就心理公益事业达成共识。解压科技联合创始人兼CEO董作军、滴水公益创始人花亦缺出席仪式并作为双方代表签订了战略合作协议。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/section-->
 </body>
 </html>
