@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=k8yZZLg63k8nI3YaLEbifaTpfkT7QdYx"></script>
     <title>Title</title>
 </head>
 <body>
@@ -47,6 +48,87 @@
         </ul>
     </div>
 </div>
+
+<!--百度地图显示的地方-->
+<div style="width: 697px; height: 462px;" id="allmap">
+</div>
+<!--百度地图显示的地方-->
 <!--/头部-->
 </body>
+
+
+<script type="text/javascript">
+
+    // 百度地图API功能
+    // var map = new BMap.Map("allmap");
+    // var point = new BMap.Point(116.331398,39.897445);
+    // map.centerAndZoom(point,12);
+    // // 创建地址解析器实例
+    // var myGeo = new BMap.Geocoder();
+    // // 将地址解析结果显示在地图上,并调整地图视野
+    // myGeo.getPoint("浙大科技园", function(point){
+    //     if (point) {
+    //         map.centerAndZoom(point, 16);
+    //         map.addOverlay(new BMap.Marker(point));
+    //     }else{
+    //         alert("您选择地址没有解析到结果!");
+    //     }
+    // }, "杭州市");
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap(); //创建地图
+        setMapEvent(); //设置地图事件
+        addMapControl(); //向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("allmap"); //在百度地图容器中创建一个地图
+        //定义地图锁定的地点的经纬度
+        var point = new BMap.Point(116.25221666778567, 39.90714262770947); //定义一个中心点坐标
+        map.centerAndZoom(point, 20); //设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map; //将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+        map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard(); //启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+        map.addControl(ctrl_ove);
+
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        map.addControl(ctrl_sca);
+
+    }
+
+    initMap(); //创建和初始化地图
+
+    serachlocal();//在地图上显示你所要搜索的地址
+    function serachlocal() {
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: {
+                map: map,
+                panel: "results", //结果容器id
+                autoViewport: true,   //自动结果标注
+                selectFirstResult: true   //指定到第一个目标
+            },
+            pageCapacity: 1
+        });
+        local.search("杭州市西湖区浙江大学国家大学科技园");
+    }
+</script>
+
 </html>
