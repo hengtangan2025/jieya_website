@@ -6,7 +6,7 @@ module.exports = {
     mode: 'development',
     entry: {
         index: ['./src/js/index.js', './src/scss/style.scss'],
-        my: './src/js/my.js'
+        // my: './src/js/my.js'
     },
     output: {
         filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[hash:10].js',
