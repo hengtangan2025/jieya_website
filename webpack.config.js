@@ -6,10 +6,11 @@ module.exports = {
     mode: 'development',
     entry: {
         index: ['./src/js/index.js', './src/scss/style.scss'],
-        // my: './src/js/my.js'
+        article: './src/js/article.js',
+        ploicDy:'./src/js/policDynamics.js'
     },
     output: {
-        filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[hash:10].js',
+        filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[name].[hash:10].js',
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
@@ -18,7 +19,7 @@ module.exports = {
             filename: 'css/style.[contenthash:10].css'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index'],
+            chunks: ['index','my'],
             filename: 'index.html',
             template: 'src/index.html'
         }),
@@ -33,7 +34,7 @@ module.exports = {
             template: 'src/page/publicWelfare/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index'],
+            chunks: ['index','ploicDy'],
             filename: 'page/policDynamics/index.html',
             template: 'src/page/policDynamics/index.html'
         }),
@@ -46,6 +47,11 @@ module.exports = {
             chunks: ['index'],
             filename: 'page/login/index.html',
             template: 'src/page/login/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['index','article'],
+            filename: 'page/article/index.html',
+            template: 'src/page/article/index.html'
         })
     ],
     optimization: {
