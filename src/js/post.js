@@ -1,7 +1,8 @@
 const article1 = {
     title: '2020年心理健康服务纳入城乡基本公共服务体系',
     time: '2017-01-19',
-    img: require('../images/dynamics_1.png'),
+    img: require('../images/dynamics_6.png'),
+    back: require('../images/back.png'),
     source: '新华社北京',
     sourceLink: 'http://www.gov.cn/xinwen/2017-01/19/content_5161362.htm',
     tooltip: false,
@@ -72,7 +73,8 @@ const article1 = {
 const article2 = {
     title: '22个部门联合印发《关于加强心理健康服务的指导意见》',
     time: '2017-01-24',
-    img: require('../images/dynamics_2.png'),
+    img: require('../images/dynamics_5.png'),
+    back: require('../images/back.png'),
     source: '民政部网站',
     sourceLink: 'http://www.gov.cn/xinwen/2017-01/24/content_5162861.htm#1',
     tooltip: false,
@@ -123,7 +125,8 @@ const article2 = {
 const article3 = {
     title: '心理服务也要标准化，专业机构对接社会心理服务体系建设',
     time: '2018-12-07',
-    img: require('../images/dynamics_3.png'),
+    img: require('../images/dynamics_4.png'),
+    back: require('../images/back.png'),
     source: '新华社',
     sourceLink: 'http://www.gov.cn/xinwen/2018-12/07/content_5346742.htm',
     tooltip: false,
@@ -155,7 +158,8 @@ const article3 = {
 const article4 = {
     title: '10部委关于印发全国社会心理服务体系建设试点工作方案的通知：心理健康工作进入试点阶段！',
     time: '2019-05-31',
-    img: require('../images/dynamics_4.png'),
+    img: require('../images/dynamics_3.png'),
+    back: require('../images/back.png'),
     source: '腾讯新闻',
     sourceLink: 'https://new.qq.com/rain/a/20190531A02SVM',
     tooltip: true,
@@ -235,7 +239,8 @@ const article4 = {
 const article5 = {
     title: '健康中国行动之心理健康促进行动：2022年居民心理健康素养水平提升到20%',
     time: '2019-07-23',
-    img: require('../images/dynamics_5.png'),
+    img: require('../images/dynamics_2.png'),
+    back: require('../images/back.png'),
     source: '央广网北京',
     sourceLink: 'https://finance.sina.com.cn/roll/2019-07-23/doc-ihytcitm4107903.shtml',
     tooltip: true,
@@ -294,7 +299,8 @@ const article5 = {
 const article6 = {
     title: '杭州部署社会心理服务体系建设国家试点工作',
     time: '2019-10-18',
-    img: require('../images/dynamics_6.png'),
+    img: require('../images/dynamics_1.png'),
+    back: require('../images/back.png'),
     source: '建德市',
     sourceLink: 'http://www.jiande.gov.cn/art/2019/10/18/art_1659307_38961340.html',
     tooltip: false,

@@ -104,8 +104,9 @@
 .welfare_image{
   //width: 240px !important;
   //height: 160px !important;
+  //width: 100% !important;
 }
-.welfare_style a{
+.welfare_style div{
   color: #34A4B0 !important;
 }
 //.secion_hover .uk-cover{
@@ -123,3 +124,7 @@
   height: 380px;
   background-size: 100% 100%;
 }
+//文章css
+//.article_image{
+//  height: 500px !important;
+//}
