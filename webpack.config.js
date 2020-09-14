@@ -156,11 +156,11 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join('dist'),
-        port: 3000,
+        port: 8080,
         historyApiFallback: true,
         overlay: true,
         hot: true,
         compress: true,
-        host:'0.0.0.0'
+        host:'192.168.5.45'
     }
 };
