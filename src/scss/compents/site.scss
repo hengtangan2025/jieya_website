@@ -114,8 +114,13 @@
 //}
 //login css
 .login_images{
-  width: 480px !important;
-  height: 400px !important;
+  width: 400px !important;
+  height: 480px !important;
+}
+.login_back{
+  background-image: url("../images/service_background1.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
 }
 //产品服务css
 .server_back{
