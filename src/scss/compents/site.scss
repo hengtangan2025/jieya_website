@@ -129,7 +129,61 @@
   height: 380px;
   background-size: 100% 100%;
 }
-//文章css
-//.article_image{
-//  height: 500px !important;
-//}
+//背景颜色
+.service_background{
+  background: #34A4B0;
+  color: #fff;
+}
+.tips{
+  padding: 20px;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 1px;
+}
+.slider-groups {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slider-item {
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+.slider-item a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+.slider-item img {
+  display: block;
+  width: 100%;
+}
+/*    right: 0;left: 0; 是为了使width为100%，
+有了宽度text-align才能生效，当然你直接写width:100%也行*/
+.dots {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 12px;
+  text-align: center;
+  font-size: 0;
+}
+.dot {
+  display: inline-block;
+  margin: 0 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: green;
+
+}
+.active {
+  width: 20px;
+  border-radius: 5px;
+  background: rgb(255, 205, 49);
+}
