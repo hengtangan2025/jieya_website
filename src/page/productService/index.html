@@ -109,8 +109,8 @@
         <img data-src="../../images/offline_process_2.png" style="margin-left: 118px;" width="180px" height="368px"
              alt="" uk-img>
     </div>
-    <div class="uk-text-center uk-margin-large-top">目前可预约的门诊点</div>
-    <div class="uk-text-center uk-margin-medium-top">城东分部：海亮馨惠馨医院（每周日上午8:00 - 12:00）</div>
+    <div class="uk-text-center uk-margin-small-top">目前可预约的门诊点</div>
+    <div class="uk-text-center uk-margin-small-top">城东分部：海亮馨惠馨医院（每周日上午8:00 - 12:00）</div>
     <div class="uk-text-center">城西分部：西湖区文新街道社区卫生服务中心（每周四上午16:00 - 19:30）</div>
 </div>
 <div class="uk-section" style="color: white;">
@@ -207,7 +207,7 @@
 <div class="uk-section uk-container">
     <div>
         <img src="../../images/service_vip_bottom.png" alt="">
-        <div class="uk-text-center uk-margin-large-top">
+        <div class="uk-text-center uk-margin-small-top">
             <div class="uk-text-break">解压心服为全行业提供专业的心理咨询室整体规划设计方案，科学定制，满足个性化需求。</div>
             <div>根据不同功能室的作用及相应要求，我们设计不同的建设方案。</div>
         </div>
@@ -402,57 +402,36 @@
         if (!isMobile()){
             console.log("滚动距离" + scrollTop);
             // web端页面滑动逻辑，不适配移动端
-            // if (scrollTop >= 1 && scrollTop <= 350){
-            //     window.scrollTo(0,700)
-            // }
-            // if (scrollTop >= 701 && scrollTop < 1050){
-            //     window.scrollTo(0,1400)
-            // }
-            // if (scrollTop >= 1401 && scrollTop < 1750){
-            //     window.scrollTo(0,2100)
-            // }
-            // if (scrollTop >= 2101 && scrollTop <= 2450){
-            //     window.scrollTo(0,2800)
-            // }
-            // if (scrollTop >= 2801 && scrollTop < 3050){
-            //     window.scrollTo(0,3500)
-            // }
-            // if (scrollTop >= 3501 && scrollTop < 3850){
-            //     window.scrollTo(0,4200)
-            // }
-            // if (scrollTop >= 4201 && scrollTop < 4050){
-            //     window.scrollTo(0,4900)
-            // }
-            // if (scrollTop >= 4901 && scrollTop < 5250){
-            //     window.scrollTo(0,5600)
-            // }
-            // if (scrollTop >= 351 && scrollTop < 700){
-            //     window.scrollTo(0,0)
-            // }
-            // if (scrollTop >= 1051 && scrollTop < 1400){
-            //     window.scrollTo(0,700)
-            // }
-            // if (scrollTop >= 1751 && scrollTop < 2100){
-            //     window.scrollTo(0,1400)
-            // }
-            // if (scrollTop >= 2451 && scrollTop < 2800){
-            //     window.scrollTo(0,2100)
-            // }
-            // if (scrollTop >= 3051 && scrollTop < 3500){
-            //     window.scrollTo(0,2800)
-            // }
-            // if (scrollTop >= 3851 && scrollTop < 4200){
-            //     window.scrollTo(0,3500)
-            // }
-            // if (scrollTop >= 4551 && scrollTop < 4900){
-            //     window.scrollTo(0,4200)
-            // }
-            // if (scrollTop >= 5251 && scrollTop < 5600){
-            //     window.scrollTo(0,4900)
-            // }
-            // if (scrollTop >= 5951 && scrollTop < 6300){
-            //     window.scrollTo(0,5600)
-            // }
+            if (scrollTop >= 351 && scrollTop < 783){
+                window.scrollTo(0,0)
+            }
+            if ((scrollTop >= 1 && scrollTop <= 351) || (scrollTop >= 1201 && scrollTop < 1600)){
+                window.scrollTo(0,783)
+            }
+            if ((scrollTop >= 784  && scrollTop <= 1200) || (scrollTop >= 2001 && scrollTop < 2400)){
+                window.scrollTo(0,1600)
+            }
+            if ((scrollTop >= 1601 && scrollTop <= 2000) || (scrollTop >= 2801 && scrollTop < 3145)){
+                window.scrollTo(0,2400)
+            }
+            if ((scrollTop >= 2401 && scrollTop <= 2800) || (scrollTop >= 3550 && scrollTop < 3950)){
+                window.scrollTo(0,3145)
+            }
+            if ((scrollTop >= 3146 && scrollTop <= 3550) || (scrollTop >= 4300 && scrollTop < 4700)){
+                window.scrollTo(0,3950)
+            }
+            if ((scrollTop >= 3951 && scrollTop <= 4300) || (scrollTop >= 5200 && scrollTop < 5731)){
+                window.scrollTo(0,4700)
+            }
+            if ((scrollTop >= 4701 && scrollTop <= 5200) || (scrollTop >= 6200 && scrollTop < 6531)){
+                window.scrollTo(0,5731)
+            }
+            if ((scrollTop >= 5732 && scrollTop <= 6200) || (scrollTop >= 6631 && scrollTop < 6834)){
+                window.scrollTo(0,6531)
+            }
+            if ((scrollTop >= 6532 && scrollTop <= 6631)){
+                window.scrollTo(0,6834)
+            }
         }
     }
 </script>
