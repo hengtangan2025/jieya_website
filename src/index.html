@@ -84,7 +84,7 @@
 </div>
 <!--  /banner-->
 <!--section-->
-<div class="uk-section uk-container">
+<div class="uk-section uk-container" style="margin-bottom: 200px">
     <div class="uk-child-width-1-2@s  uk-child-width-1-4@l uk-text-center" uk-grid>
         <div>
             <div class="uk-card uk-card-body secion_hover border_style uk-border-rounded">
@@ -138,7 +138,7 @@
 </div>
 <!--/section-->
 <!--  产品服务-->
-<div class="uk-container server_container">
+<div class="uk-container server_container" style="margin-bottom: 200px;">
     <div class="uk-h3 uk-text-center">产品服务</div>
     <div class="uk-section">
         <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-match uk-grid-small" uk-grid>
@@ -299,4 +299,28 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    window.onscroll = function() {
+        //为了保证兼容性，这里取两个值，哪个有值取哪一个
+        //scrollTop就是触发滚轮事件时滚轮的高度
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log("滚动距离" + scrollTop);
+        // web端页面滑动逻辑，不适配移动端
+        if (scrollTop < 700){
+            window.scrollTo(0,0)
+        }
+        if ((scrollTop >= 1 && scrollTop <= 350) || (scrollTop >= 1051 && scrollTop < 1400)){
+            window.scrollTo(0,700)
+        }
+        if ((scrollTop >= 701 && scrollTop <= 1050) || (scrollTop >= 1751 && scrollTop < 2274)){
+            window.scrollTo(0,1400)
+        }
+        if ((scrollTop >= 1401 && scrollTop <= 1800)  || (scrollTop >= 2474 && scrollTop < 2653)){
+            window.scrollTo(0,2274)
+        }
+        if (scrollTop >= 2275 && scrollTop <= 2474){
+            window.scrollTo(0,2653)
+        }
+    }
+</script>
 </html>
