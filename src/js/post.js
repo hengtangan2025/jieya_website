@@ -328,7 +328,7 @@ const article6 = {
   </p>`
 }
 
-export const allArticles=
+export const allArticles =
     [
         {
             name: '8b8d6202',
@@ -355,5 +355,104 @@ export const allArticles=
             data: article1
         }
     ]
-
+export const service_top =
+    [
+        {
+            img: require('../images/stress_reliever1.png'),
+            name: '心理睡眠床'
+        },
+        {
+            img: require('../images/stress_reliever1.png'),
+            name: '音乐体感放松沙发'
+        },
+        {
+            img: require('../images/stress_reliever1.png'),
+            name: '智能呐喊宣泄仪'
+        },
+        {
+            img: require('../images/stress_reliever1.png'),
+            name: '智能互动宣泄仪'
+        }
+    ]
+export const service_bottom =
+    [
+        {
+            img: require('../images/cognitive_training1.png'),
+            name: '心理自助服务系统'
+        },
+        {
+            img: require('../images/cognitive_training2.png'),
+            name: '生物反馈训练系统'
+        },
+        {
+            img: require('../images/cognitive_training3.png'),
+            name: '实体沙盘'
+        },
+        {
+            img: require('../images/cognitive_training4.png'),
+            name: '团辅教具'
+        }
+    ]
+export const index_banner =
+    [
+        {
+            img: require('../images/banner_1.png')
+        },
+        {
+            img: require('../images/banner_2.png')
+        },
+        {
+            img: require('../images/banner_3.png')
+        },
+        {
+            img: require('../images/banner_4.png')
+        }
+    ]
+export const index_bottom =
+    [
+        {
+            img: require('../images/index_image1.png')
+        },
+        {
+            img: require('../images/index_image1.png')
+        },
+        {
+            img: require('../images/index_image3.png')
+        }
+    ]
+export const dynamics_bottom =
+    [
+        {
+            img: require('../images/policy_1.png')
+        },
+        {
+            img: require('../images/policy_2.png')
+        },
+        {
+            img: require('../images/policy_3.png')
+        }
+    ]
+export const index_section =
+    [
+        {
+            img: require('../images/index_1.png'),
+            name:'心理预约咨询',
+            dec:'如果需要预约咨询师 扫描二维码'
+        },
+        {
+            img: require('../images/index_2.png'),
+            name:'咨询师入驻',
+            dec:'如果您是心理咨询师 欢迎联系客服'
+        },
+        {
+            img: require('../images/index_3.png'),
+            name:'机构入驻',
+            dec:'如果您是心理服务机构 欢迎联系客服'
+        },
+        {
+            img: require('../images/index_4.png'),
+            name:'合作服务',
+            dec:'服务微如果您希望合作 欢迎联系客服信二维码'
+        }
+    ]
 

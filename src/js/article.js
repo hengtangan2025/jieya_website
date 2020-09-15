@@ -1,7 +1,5 @@
 import * as Post from './post';
 
-console.log('post--', Post)
-
 function GetUrlParam(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
     var r = encodeURI(window.location.search).substr(1).match(reg);

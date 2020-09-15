@@ -7,7 +7,9 @@ module.exports = {
     entry: {
         index: ['./src/js/index.js', './src/scss/style.scss'],
         article: './src/js/article.js',
-        ploicDy:'./src/js/policDynamics.js'
+        ploicDy:'./src/js/policDynamics.js',
+        service:'./src/js/service.js',
+        home:'./src/js/home.js'
     },
     output: {
         filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[name].[hash:10].js',
@@ -19,12 +21,12 @@ module.exports = {
             filename: 'css/style.[contenthash:10].css'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index','my'],
+            chunks: ['index','home'],
             filename: 'index.html',
             template: 'src/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index'],
+            chunks: ['index','service'],
             filename: 'page/productService/index.html',
             template: 'src/page/productService/index.html'
         }),
