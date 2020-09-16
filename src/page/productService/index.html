@@ -23,8 +23,8 @@
 
         .swiper-container {
             width: 100%;
-            /*height: 100%;*/
-            z-index: -1;
+            height: 100%;
+            z-index:0;
         }
 
         .swiper-slide {
@@ -249,33 +249,92 @@
     </div>
 </div>
 <!--轮播图-->
-<div class="uk-container">
+<!--<div class="uk-container">-->
+<!--    <div class="swiper-container">-->
+<!--        <div class="swiper-wrapper">-->
+<!--            <div class="swiper-slide">Slide 1</div>-->
+<!--            <div class="swiper-slide">Slide 2</div>-->
+<!--            <div class="swiper-slide">Slide 3</div>-->
+<!--            <div class="swiper-slide">Slide 4</div>-->
+<!--            <div class="swiper-slide">Slide 5</div>-->
+<!--            <div class="swiper-slide">Slide 6</div>-->
+<!--            <div class="swiper-slide">Slide 7</div>-->
+<!--            <div class="swiper-slide">Slide 8</div>-->
+<!--            <div class="swiper-slide">Slide 9</div>-->
+<!--            <div class="swiper-slide">Slide 10</div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Add Pagination &ndash;&gt;-->
+<!--        <div class="swiper-pagination"></div>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="uk-container uk-section">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="../../images/server_1.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner1.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark uk-animation-slide-bottom">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">预约接待室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_2.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner2.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark uk-animation-slide-bottom">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">心理测评室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_3.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner3.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark uk-animation-slide-bottom">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">个体咨询室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_4.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner4.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark uk-animation-slide-bottom">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">沙盘游戏室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_5.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner5.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark uk-animation-slide-bottom">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">宣泄室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_6.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner6.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">音乐放松室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_7.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner7.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">团体辅导室</div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="../../images/server_8.png" alt="" style="width: 380px">
+                <div class="uk-inline">
+                    <img src="../../images/service_banner8.png" alt="">
+                    <div class="uk-overlay-primary uk-position-bottom uk-dark">
+                        <div class="uk-padding-small uk-padding-remove-horizontall text-color">教研室</div>
+                    </div>
+                </div>
             </div>
+
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -290,7 +349,7 @@
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
+        loop:true,
         autoplay:true
     });
 </script>
