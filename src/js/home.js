@@ -18,7 +18,7 @@ Post.index_section.forEach(e => {
 <div class="uk-h3">${e.name}</div>
 <div class="uk-padding uk-padding-remove-horizontal font-size20">${e.dec}</div>
 <div uk-lightbox>
-<a class="uk-button uk-button-default uk-border-pill" href="${e.img}">查看联系方式</a>
+<a class="uk-button uk-button-default uk-border-pill" href="${e.href_img}">查看联系方式</a>
 </div>
 </div>
 </div>`

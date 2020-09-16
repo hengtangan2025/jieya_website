@@ -436,23 +436,27 @@ export const index_section =
     [
         {
             img: require('../images/index_1.png'),
+            href_img:require('../images/xinzhichang.jpg'),
             name:'心理预约咨询',
             dec:'如果需要预约咨询师 扫描二维码'
         },
         {
             img: require('../images/index_2.png'),
+            href_img:require('../images/contact.png'),
             name:'咨询师入驻',
             dec:'如果您是心理咨询师 欢迎联系客服'
         },
         {
             img: require('../images/index_3.png'),
+            href_img:require('../images/contact.png'),
             name:'机构入驻',
             dec:'如果您是心理服务机构 欢迎联系客服'
         },
         {
             img: require('../images/index_4.png'),
+            href_img:require('../images/contact.png'),
             name:'合作服务',
-            dec:'服务微如果您希望合作 欢迎联系客服信二维码'
+            dec:'如果您希望合作欢迎联系客服信二维码'
         }
     ]
 
