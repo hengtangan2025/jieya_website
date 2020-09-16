@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            /*background: #eee;*/
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 0;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
+
 <!--头部-->
 <div class="fixed-top">
     <nav class="nav_background uk-position-fixed uk-position-z-index uk-width-1-1 uk-padding-large uk-padding-remove-vertical"
@@ -70,6 +116,18 @@
     </div>
 </div>
 <!--  /banner-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true
+    });
+</script>
 <!--section-->
 <div class=" uk-container">
     <div class="uk-child-width-1-2@s  uk-child-width-1-4@l uk-text-center" uk-grid id="index_section">
@@ -84,13 +142,13 @@
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                     <img src="./images/server_1.png" alt="">
-                    <div class="uk-position-bottom policy_content">
+                    <div class="uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal font-size20" style="border-bottom-right-radius:10px;border-bottom-left-radius:10px">
                         <p class="uk-margin-remove">Bottom</p>
                     </div>
                 </div>
             </div>
             <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0" >
                     <img src="./images/server_2.png" alt="">
                     <div class="uk-position-bottom policy_content">
                         <p class="uk-margin-remove">Bottom</p>
@@ -148,31 +206,31 @@
         </div>
     </div>
 </div>
-<!--/产品服务-->
+<!--&lt;!&ndash;/产品服务&ndash;&gt;-->
 <div class="uk-container">
     <h3 class="uk-text-center">公司资质</h3>
     <div class="uk-visible@m">
-        <div class="uk-text-center">
-            <p>杭州解压科技有限公司是一家专注于心理健康服务的“互联网+医疗”平台，</p>
-            <p>精神心理专家团队拥有行业领先的科研创新能力，</p>
-            <p>团队包括中科院心理学博士、精神科医生、资深心理专家、高校心理教师、心理社工等。</p>
+        <div class="uk-text-center font-size20">
+            <div>杭州解压科技有限公司是一家专注于心理健康服务的“互联网+医疗”平台，</div>
+            <div>精神心理专家团队拥有行业领先的科研创新能力，</div>
+            <div>团队包括中科院心理学博士、精神科医生、资深心理专家、高校心理教师、心理社工等。</div>
         </div>
         <div class="uk-margin">
-            <div class="uk-text-center">
-                <p>我们致力于通过全方位心理服务、心理咨询室建设及心理系统开发，</p>
-                <p>来提供给个人、企事业单位、学校心理相关问题的咨询与治疗服务。</p>
-                <p>提供多维度的解压策略，建立健康生活方式。</p>
+            <div class="uk-text-center font-size20">
+                <div>我们致力于通过全方位心理服务、心理咨询室建设及心理系统开发，</div>
+                <div>来提供给个人、企事业单位、学校心理相关问题的咨询与治疗服务。</div>
+                <div>提供多维度的解压策略，建立健康生活方式。</div>
             </div>
         </div>
     </div>
     <div class="uk-hidden@m">
-        <div class="uk-text-center">
+        <div class="uk-text-center font-size20">
             <p>杭州解压科技有限公司是一家专注于心理健康服务的“互联网+医疗”平台，</p>
             <p>精神心理专家团队拥有行业领先的科研创新能力，</p>
             <p>团队包括中科院心理学博士、精神科医生、资深心理专家、高校心理教师、心理社工等。</p>
         </div>
         <div class="uk-margin">
-            <div class="uk-text-center">
+            <div class="uk-text-center font-size20">
                 <p>我们致力于通过全方位心理服务、心理咨询室建设及心理系统开发，</p>
                 <p>来提供给个人、企事业单位、学校心理相关问题的咨询与治疗服务。</p>
                 <p>提供多维度的解压策略，建立健康生活方式。</p>
@@ -180,20 +238,21 @@
         </div>
     </div>
     <div class="uk-section">
-        <div class="uk-child-width-expand@s uk-child-width-1-3@m uk-text-center" uk-grid uk-lightbox="animation: slide" id="index_bottom">
+        <div class="uk-child-width-expand@s uk-child-width-1-3@m uk-text-center" uk-grid uk-lightbox="animation: slide"
+             id="index_bottom">
 
         </div>
     </div>
 </div>
 <div id="foot">
     <div class="uk-container">
-        <div class="" uk-grid >
+        <div class="" uk-grid>
             <div class="uk-width-5-6 uk-flex-left uk-margin-top">
                 <div>
                     <div class="">有任何合作意向和建议可以通过以下方式联系</div>
                     <div class="uk-margin-top">邮箱：jykj_u@163.com</div>
-                    <div class="uk-margin-top">联系电话：(0571) 8895 3801</div>
-                    <div class="uk-margin-top">地址：浙江大学国家大学科技园</div>
+                    <div class="uk-margin-small-top">联系电话：(0571) 8895 3801</div>
+                    <div class="uk-margin-small-top">地址：浙江大学国家大学科技园</div>
                 </div>
             </div>
             <div class="uk-flex-right uk-margin-top">
@@ -210,38 +269,4 @@
     </div>
 </div>
 </body>
-<!--<script type="text/javascript">-->
-<!--    function isMobile(){-->
-<!--        if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {-->
-<!--            return true; // 移动端-->
-<!--        }else{-->
-<!--            return false; // PC端-->
-<!--        }-->
-<!--    }-->
-
-<!--    window.onscroll = function() {-->
-<!--        //为了保证兼容性，这里取两个值，哪个有值取哪一个-->
-<!--        //scrollTop就是触发滚轮事件时滚轮的高度-->
-<!--        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;-->
-<!--        if (!isMobile()){-->
-<!--            console.log("滚动距离" + scrollTop);-->
-<!--            // web端页面滑动逻辑，不适配移动端-->
-<!--            if (scrollTop < 700){-->
-<!--                window.scrollTo(0,0)-->
-<!--            }-->
-<!--            if ((scrollTop >= 1 && scrollTop <= 350) || (scrollTop >= 1051 && scrollTop < 1400)){-->
-<!--                window.scrollTo(0,700)-->
-<!--            }-->
-<!--            if ((scrollTop >= 701 && scrollTop <= 1050) || (scrollTop >= 1751 && scrollTop < 2274)){-->
-<!--                window.scrollTo(0,1400)-->
-<!--            }-->
-<!--            if ((scrollTop >= 1401 && scrollTop <= 1800)  || (scrollTop >= 2474 && scrollTop < 2653)){-->
-<!--                window.scrollTo(0,2274)-->
-<!--            }-->
-<!--            if (scrollTop >= 2275 && scrollTop <= 2474){-->
-<!--                window.scrollTo(0,2653)-->
-<!--            }-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
 </html>
