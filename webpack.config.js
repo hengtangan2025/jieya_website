@@ -169,6 +169,6 @@ module.exports = {
         overlay: true,
         hot: true,
         compress: true,
-        host:'0.0.0.0'
+        host:'192.168.5.68'
     }
 };
