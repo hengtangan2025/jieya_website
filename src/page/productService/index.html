@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            /*height: 100%;*/
+            z-index: -1;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 <!--头部-->
@@ -50,7 +93,6 @@
         </ul>
     </div>
 </div>
-
 <div class="uk-section">
     <div class="uk-container uk-text-center">
         <div class="uk-h3 ">心理体检与评估</div>
@@ -65,8 +107,6 @@
         </div>
     </div>
 </div>
-
-
 <!--<div class="uk-section">-->
 <!--    <div class="uk-text-center uk-width" style="height: 380px; background-size:100% 100%;"-->
 <!--         data-src="../../images/service_background1.png" uk-img>-->
@@ -105,8 +145,8 @@
         <span style="border: #34A4B0 2px solid; border-radius: 8px;" class="uk-padding-small">线下面询</span>
     </div>
     <div class="uk-text-center uk-margin-large-top">
-        <img data-src="../../images/offline_process_1.png"  alt="" uk-img>
-        <img data-src="../../images/offline_process_2.png"  alt="" uk-img>
+        <img data-src="../../images/offline_process_1.png" alt="" uk-img>
+        <img data-src="../../images/offline_process_2.png" alt="" uk-img>
     </div>
     <div class="uk-text-center uk-margin-small-top">目前可预约的门诊点</div>
     <div class="uk-text-center uk-margin-small-top">城东分部：海亮馨惠馨医院（每周日上午8:00 - 12:00）</div>
@@ -184,7 +224,7 @@
     <div class="uk-text-center uk-width-1-1"
          style="height: 800px; background-size:100% 100%; -moz-background-size:100% 100%;"
          data-src="../../images/service_vip.png" uk-img>
-<!--        <div class="uk-h2 uk-padding-la"></div>-->
+        <!--        <div class="uk-h2 uk-padding-la"></div>-->
         <h2 class="" style="color: white; padding-top: 230px;">VIP会员专属权益</h2>
         <div class="uk-section">
             <div>
@@ -209,7 +249,51 @@
     </div>
 </div>
 <!--轮播图-->
+<div class="uk-container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../../images/server_1.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_2.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_3.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_4.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_5.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_6.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_7.png" alt="" style="width: 380px">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/server_8.png" alt="" style="width: 380px">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
 <!--/轮播图-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay:true
+    });
+</script>
 <!--减压放松类-->
 <div class="uk-margin-top uk-container">
     <div class="uk-h3 uk-text-center uk-margin-medium-bottom">减压放松类</div>
@@ -332,7 +416,7 @@
                 </div>
             </div>
         </div>
-        <div >
+        <div>
             <div class="uk-card secion_hover uk-card-body border_style uk-border-rounded" style="height: 550px">
                 <div>
                     <img src="../../images/service_bottom3.png" alt=""
@@ -354,7 +438,7 @@
 <!--footer-->
 <div id="foot">
     <div class="uk-container">
-        <div class="" uk-grid >
+        <div class="" uk-grid>
             <div class="uk-width-5-6 uk-flex-left uk-margin-top">
                 <div>
                     <div class="">有任何合作意向和建议可以通过以下方式联系</div>
@@ -379,54 +463,4 @@
 <!--/footer-->
 </body>
 
-<script type="text/javascript">
-    // 判断浏览器函数
-    function isMobile(){
-        if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
-            return true; // 移动端
-        }else{
-            return false; // PC端
-        }
-    }
-
-    window.onscroll = function() {
-        //为了保证兼容性，这里取两个值，哪个有值取哪一个
-        //scrollTop就是触发滚轮事件时滚轮的高度
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if (!isMobile()){
-            console.log("滚动距离" + scrollTop);
-            // web端页面滑动逻辑，不适配移动端
-            if (scrollTop >= 351 && scrollTop < 783){
-                window.scrollTo(0,0)
-            }
-            if ((scrollTop >= 1 && scrollTop <= 351) || (scrollTop >= 1201 && scrollTop < 1600)){
-                window.scrollTo(0,783)
-            }
-            if ((scrollTop >= 784  && scrollTop <= 1200) || (scrollTop >= 2001 && scrollTop < 2400)){
-                window.scrollTo(0,1600)
-            }
-            if ((scrollTop >= 1601 && scrollTop <= 2000) || (scrollTop >= 2801 && scrollTop < 3145)){
-                window.scrollTo(0,2400)
-            }
-            if ((scrollTop >= 2401 && scrollTop <= 2800) || (scrollTop >= 3550 && scrollTop < 3950)){
-                window.scrollTo(0,3145)
-            }
-            if ((scrollTop >= 3146 && scrollTop <= 3550) || (scrollTop >= 4300 && scrollTop < 4700)){
-                window.scrollTo(0,3950)
-            }
-            if ((scrollTop >= 3951 && scrollTop <= 4300) || (scrollTop >= 5200 && scrollTop < 5731)){
-                window.scrollTo(0,4700)
-            }
-            if ((scrollTop >= 4701 && scrollTop <= 5200) || (scrollTop >= 6200 && scrollTop < 6531)){
-                window.scrollTo(0,5731)
-            }
-            if ((scrollTop >= 5732 && scrollTop <= 6200) || (scrollTop >= 6631 && scrollTop < 6834)){
-                window.scrollTo(0,6531)
-            }
-            if ((scrollTop >= 6532 && scrollTop <= 6631)){
-                window.scrollTo(0,6834)
-            }
-        }
-    }
-</script>
 </html>
