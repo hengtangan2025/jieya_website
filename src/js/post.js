@@ -362,15 +362,15 @@ export const service_top =
             name: '心理睡眠床'
         },
         {
-            img: require('../images/stress_reliever1.png'),
+            img: require('../images/stress_reliever2.png'),
             name: '音乐体感放松沙发'
         },
         {
-            img: require('../images/stress_reliever1.png'),
+            img: require('../images/stress_reliever3.png'),
             name: '智能呐喊宣泄仪'
         },
         {
-            img: require('../images/stress_reliever1.png'),
+            img: require('../images/stress_reliever4.png'),
             name: '智能互动宣泄仪'
         }
     ]
@@ -414,7 +414,7 @@ export const index_bottom =
             img: require('../images/index_image1.png')
         },
         {
-            img: require('../images/index_image1.png')
+            img: require('../images/index_image2.png')
         },
         {
             img: require('../images/index_image3.png')
