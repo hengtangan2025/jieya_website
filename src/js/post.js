@@ -459,4 +459,21 @@ export const index_section =
             dec:'如果您希望合作欢迎联系客服信二维码'
         }
     ]
+export const service_less_press =
+    [
+        {
+            img: require('../images/offline1.png'),
+            name:'减压课程',
+            dec:'心理调节和心理障碍预防 负面情绪疏导和压力调适 情绪和压力管理 心理危机干预 正念生活'
+        }, {
+            img: require('../images/offline2.png'),
+            name:'企业员工课程',
+            dec:'沟通艺术与领导艺术 幸福的员工是什么样子？ 工作家庭重点平衡 职场心理学'
+        }, {
+            img: require('../images/offline3.png'),
+            name:'生活课程',
+            dec:'夫妻沟通的心法与方法 亲子关系心视角 实用说话技巧 社交生存术'
+        }
+
+    ]
 
