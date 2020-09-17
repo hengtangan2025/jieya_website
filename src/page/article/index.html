@@ -79,5 +79,32 @@
     </div>
 </div>
 <!--/footer-->
+<div id="gotop" style="display: none;" >
+    <a href="#" uk-totop uk-scroll uk-scrollspy="cls:uk-animation-fade" class="box"></a>
+</div>
+<script>
+    window.onload = function () {
+        var top = document.getElementById("gotop");
+        //滚动一屏幕时显示回到顶部
+        window.onscroll = function () {
+            var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            currentPosition > window.screen.availHeight ? top.style.display = "block" : top.style.display = "none";
+        };
+        top.onclick = GoTop;// 注意不要括号
+        function GoTop() {
+            var timer = setInterval(function () {
+                var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+                currentPosition -= 100;
+                if (currentPosition > 0) {
+                    window.scrollTo(0, currentPosition);
+                }
+                else {
+                    window.scrollTo(0, 0);
+                    clearInterval(timer);
+                }
+            }, 10);
+        }
+    }
+</script>
 </body>
 </html>
