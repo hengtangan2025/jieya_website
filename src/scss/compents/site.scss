@@ -131,8 +131,14 @@
 }
 //背景颜色
 .service_background{
-  background: #34A4B0;
-  color: #fff;
+  background: #34A4B0 !important;
+  color: #fff !important;
+}
+.border-radius{
+  border-bottom-right-radius:5px !important;
+  border-bottom-left-radius:5px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 .text-color{
   color: #fff !important;
