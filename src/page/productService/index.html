@@ -107,8 +107,8 @@
         </div>
     </div>
 </div>
-<div class="uk-section">
-    <div class="uk-visible@s">
+<div class="uk-section uk-margin-large-top">
+    <div class="uk-visible@s uk-margin-large-top">
         <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../../images/service_background1.png" uk-img style="background-size: 100% 100%;height: 380px;">
             <div class="uk-position-right uk-margin-large-right" style="top:-80px">
                 <img src="../../images/service_background1_2.png" alt="" style="width: 178px;height: 366px;top:-35px;left:38%" class="uk-position-top-center">
@@ -149,7 +149,7 @@
             </div>
         </div>
     </div>
-    <div id="onLine">
+    <div id="onLine" class="uk-margin-large-top">
         <div class="uk-visible@s" style="margin-top: 200px">
             <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../../images/service_background1.png" uk-img style="background-size: 100% 100%;height: 380px;">
                 <div class="uk-position-left uk-margin-large-left" style="top:-80px">
@@ -166,25 +166,25 @@
                 </div>
             </div>
         </div>
-        <div class="uk-hidden@s uk-container">
-        <div class="uk-child-width-1-3" uk-grid uk-lightbox="animation: slide">
-            <div>
-                <a class="uk-inline" href="../../images/service_background2_2.png">
-                    <img src="../../images/service_background2_2.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a class="uk-inline" href="../../images/service_background2_1.png">
-                    <img src="../../images/service_background2_1.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a class="uk-inline" href="../../images/service_background2_3.png">
-                    <img src="../../images/service_background2_3.png" alt="">
-                </a>
+        <div class="uk-hidden@s uk-container uk-margin-large-top">
+            <div class="uk-child-width-1-3" uk-grid uk-lightbox="animation: slide">
+                <div>
+                    <a class="uk-inline" href="../../images/service_background2_2.png">
+                        <img src="../../images/service_background2_2.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../../images/service_background2_1.png">
+                        <img src="../../images/service_background2_1.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="../../images/service_background2_3.png">
+                        <img src="../../images/service_background2_3.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </div>
 
@@ -542,27 +542,87 @@
     <div href="#" uk-totop uk-scroll uk-scrollspy="cls:uk-animation-fade" class="box uk-visible@s"></div>
     <div href="#" uk-totop uk-scroll uk-scrollspy="cls:uk-animation-fade" class="box uk-hidden@s right_style"></div>
 </div>
-<script>
-    window.onload = function () {
-        var top = document.getElementById("gotop");
-        //滚动一屏幕时显示回到顶部
-        window.onscroll = function () {
-            var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-            currentPosition > window.screen.availHeight ? top.style.display = "block" : top.style.display = "none";
-        };
-        top.onclick = GoTop;// 注意不要括号
-        function GoTop() {
-            var timer = setInterval(function () {
-                var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-                currentPosition -= 100;
-                if (currentPosition > 0) {
-                    window.scrollTo(0, currentPosition);
-                }
-                else {
-                    window.scrollTo(0, 0);
-                    clearInterval(timer);
-                }
-            }, 10);
+<script type="text/javascript">
+    // window.onload = function () {
+    //     var top = document.getElementById("gotop");
+    //     //滚动一屏幕时显示回到顶部
+    //     window.onscroll = function () {
+    //         var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    //         currentPosition > window.screen.availHeight ? top.style.display = "block" : top.style.display = "none";
+    //     };
+    //     top.onclick = GoTop;// 注意不要括号
+    //     function GoTop() {
+    //         var timer = setInterval(function () {
+    //             var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    //             currentPosition -= 100;
+    //             if (currentPosition > 0) {
+    //                 window.scrollTo(0, currentPosition);
+    //             }
+    //             else {
+    //                 window.scrollTo(0, 0);
+    //                 clearInterval(timer);
+    //             }
+    //         }, 10);
+    //     }
+    // }
+
+    function isMobile(){
+        if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+            return true; // 移动端
+        }else{
+            return false; // PC端
+        }
+    }
+
+    window.onscroll = function() {
+        //为了保证兼容性，这里取两个值，哪个有值取哪一个
+        //scrollTop就是触发滚轮事件时滚轮的高度
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (!isMobile()){
+            console.log("滚动距离" + scrollTop);
+            // web端页面滑动逻辑，不适配移动端
+            if (scrollTop >= 351 && scrollTop < 700){
+                window.scrollTo(0,0)
+            }
+            if ((scrollTop >= 1 && scrollTop <= 350) || (scrollTop >= 1001 && scrollTop < 1340)){
+                window.scrollTo(0,700)
+            }
+            if ((scrollTop >= 701 && scrollTop <= 1001) || (scrollTop >= 1701 && scrollTop < 2150)){
+                window.scrollTo(0,1340)
+            }
+            if ((scrollTop >= 1341 && scrollTop <= 1701) || (scrollTop >= 2551 && scrollTop < 2960)){
+                window.scrollTo(0,2150)
+            }
+            if ((scrollTop >= 2151 && scrollTop <= 2551) || (scrollTop >= 3401 && scrollTop < 3800)){
+                window.scrollTo(0,2960)
+            }
+            if ((scrollTop >= 2961 && scrollTop <= 3401) || (scrollTop >= 4351 && scrollTop < 4700)){
+                window.scrollTo(0,3800)
+            }
+            if ((scrollTop >= 3801 && scrollTop <= 4351) || (scrollTop >= 5151 && scrollTop < 5634)){
+                window.scrollTo(0,4700)
+            }
+            if ((scrollTop >= 4701 && scrollTop <= 5151) || (scrollTop >= 5801 && scrollTop < 6080)){
+                window.scrollTo(0,5634)
+            }
+            if ((scrollTop >= 5635 && scrollTop <= 5801) || (scrollTop >= 6301 && scrollTop < 6780)){
+                window.scrollTo(0,6080)
+            }
+            if ((scrollTop >= 6081 && scrollTop <= 6301) || (scrollTop >= 7001 && scrollTop < 7480)){
+                window.scrollTo(0,6780)
+            }
+            if ((scrollTop >= 6781 && scrollTop <= 7001) || (scrollTop >= 7801 && scrollTop < 8400)){
+                window.scrollTo(0,7480)
+            }
+            if ((scrollTop >= 7481 && scrollTop <= 7801) || (scrollTop >= 8801 && scrollTop < 9140)){
+                window.scrollTo(0,8400)
+            }
+            if ((scrollTop >= 8401 && scrollTop <= 8801) || (scrollTop >= 9301 && scrollTop < 9448)){
+                window.scrollTo(0,9140)
+            }
+            if (scrollTop >= 9141 && scrollTop < 9301){
+                window.scrollTo(0,9448)
+            }
         }
     }
 </script>
