@@ -25,6 +25,29 @@ Post.index_section.forEach(e => {
 })
 document.getElementById("index_section").innerHTML = sectionStr;
 
+var sectionStr1=''
+Post.index_service.forEach(e => {
+    sectionStr1 += `<div class="uk-text-center curson">
+<div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+    <img src="${e.img}" alt="">
+    <div class="uk-overlay-primary uk-position-cover uk-border-rounded"></div>
+    <div class="uk-position-top-center uk-margin-large-top text-color font-size24">
+    <div>${e.name}</div>
+    <div>${e.dec}</div>
+</div>
+    <div class="uk-transition-slide-bottom uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal font-size20 uk-border-rounded border-radius uk-visible@s">
+    <a href="${e.href}" class="uk-margin-remove text-color">查看详情</a>
+    <span uk-icon="arrow-right"></span>
+</div>
+<div class="uk-transition-slide-bottom uk-position-bottom policy_content font-size20 uk-border-rounded border-radius uk-hidden@s">
+ <a href="${e.href}" class="uk-margin-remove text-color">查看详情</a>
+    <span uk-icon="arrow-right"></span>
+</div>
+</div>
+</div>`
+})
+document.getElementById("index_service").innerHTML = sectionStr1;
+
 var bottomStr = ""
 Post.index_bottom.forEach(e => {
     bottomStr += `<div>

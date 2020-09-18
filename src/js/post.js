@@ -476,4 +476,49 @@ export const service_less_press =
         }
 
     ]
+export const index_service =
+    [
+        {
+            img: require('../images/server_1.png'),
+            name:'心理体检与评估',
+            dec:'',
+            href:'./page/productService#mentalHealth'
+        },{
+            img: require('../images/server_2.png'),
+            name:'线上心理咨询',
+            dec:'',
+            href:'./page/productService#online'
+        },{
+            img: require('../images/server_3.png'),
+            name:'线下门诊',
+            dec:'',
+            href:'./page/productService#offline'
+        },{
+            img: require('../images/server_4.png'),
+            name:'培训课程',
+            dec:'',
+            href:'./page/productService#offlineLecture'
+        },{
+            img: require('../images/server_5.png'),
+            name:'VIP服务',
+            dec:'',
+            href:'./page/productService#vip'
+        },{
+            img: require('../images/server_6.png'),
+            name:'心理咨询室建设',
+            dec:'',
+            href:'./page/productService#consultingRoom'
+        },{
+            img: require('../images/server_7.png'),
+            name:'心理辅导室建设',
+            dec:'',
+            href:'./page/productService#facility'
+        },{
+            img: require('../images/server_8.png'),
+            name:'心理健康',
+            dec:'互联网系统开发',
+            href:'./page/productService#bottom'
+        }
+
+    ]
 
