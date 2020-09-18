@@ -1,6 +1,9 @@
 @import "variables.scss";
 @import "theme.scss";
 //返回顶部
+body{
+  font-size: 16px !important;
+}
 .box{
   position:fixed;
   right:40px;
@@ -120,11 +123,6 @@
   opacity: 0.69;
 }
 //公益事业css
-.welfare_image{
-  //width: 240px !important;
-  //height: 160px !important;
-  //width: 100% !important;
-}
 .welfare_style div{
   color: #34A4B0 !important;
 }
@@ -163,13 +161,13 @@
   color: #fff !important;
 }
 .font-size20{
-  font-size: 1.25em !important;
+  font-size: 1.25vw !important;
 }
 .font-size18{
   font-size: 1.125em !important;
 }
 .font-size24{
-  font-size: 1.5em !important;
+  font-size: 1.25vw !important;
 }
 .slider {
   position: relative;
