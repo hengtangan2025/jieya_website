@@ -438,7 +438,7 @@ export const index_section =
             img: require('../images/index_1.png'),
             href_img:require('../images/xinzhichang.jpg'),
             name:'心理预约咨询',
-            dec:'如果需要预约咨询师 扫描二维码'
+            dec:'如果需要预约咨询师&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码   '
         },
         {
             img: require('../images/index_2.png'),
