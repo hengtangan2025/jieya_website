@@ -1,9 +1,6 @@
 @import "variables.scss";
 @import "theme.scss";
 //返回顶部
-body{
-  font-size: 16px !important;
-}
 //logo 宽度
 .logo_width{
   width: 86px;
@@ -17,7 +14,7 @@ body{
   border-radius: 50% !important;
   text-align: center;
   line-height: 30px !important;
-  background-color: lightblue !important;
+  //background-color: lightblue !important;
   cursor: pointer !important;
 }
 .right_style{
@@ -57,7 +54,7 @@ body{
   height: 367px;
 }
 .nav_background{
-  background: linear-gradient(23deg, #51E8F8 0%, #34A5B1 100%);
+  background: #36425F;
   color: #fff;
 }
 .conten-border {
@@ -66,7 +63,7 @@ body{
 #foot{
   background: #36425F;
   color: #fff;
-  font-size: 14px;
+  //font-size: 14px;
   margin-top: 48px;
 }
 .index_foot{
@@ -118,7 +115,7 @@ body{
   width: 220px;
   height: 300px;
   background: #34A4B0;
-  padding: 10px;
+  padding: 5px;
   border-radius: 12px;
 }
 .policy_content{
@@ -168,13 +165,16 @@ body{
   color: #fff !important;
 }
 .font-size20{
-  font-size: 1vw !important;
+  font-size: 20px !important;
 }
 .font-size18{
-  font-size: 0.75vw !important;
+  font-size: 18px !important;
 }
 .font-size24{
-  font-size: 1.25vw !important;
+  font-size: 24px !important;
+}
+.font-size16{
+  font-size: 16px !important;
 }
 .slider {
   position: relative;
@@ -221,8 +221,25 @@ body{
   background: green;
 
 }
+.foot_bottom{
+  background: #18233B;
+}
 .active {
   width: 20px;
   border-radius: 5px;
   background: rgb(255, 205, 49);
+}
+@media (max-width: 500px){
+  .font-size24{
+    font-size: 22px !important;
+  }
+  .font-size20{
+    font-size: 18px !important;
+  }
+  .font-size18{
+    font-size: 16px !important;
+  }
+  .font-size16{
+    font-size: 14px !important;
+  }
 }
