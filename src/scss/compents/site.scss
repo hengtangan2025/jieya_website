@@ -102,7 +102,7 @@ html{
 }
 .secion_hover:hover{
   box-shadow: 1px 1px 8px #34A4B0;
-  border: none;
+  border: 1px solid  #34A4B0;
 }
 .server_container{
   //background-image: url("../images/index_success_back.png");
@@ -132,6 +132,13 @@ html{
 }
 .secion_hover .uk-cover{
   top:55%;
+}
+.padding20{
+  padding: 20px 0;
+}
+.arrow{
+  width: 22px;
+  height: 18px;
 }
 //login css
 .login_images{

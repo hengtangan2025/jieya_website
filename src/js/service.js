@@ -15,7 +15,7 @@ document.getElementById("service_top_data").innerHTML = policStr;
 var bottomStr = ""
 Post.service_bottom.forEach(e => {
     bottomStr += `<div>
-<div class="uk-border-rounded service_background uk-padding-small uk-padding-remove-bottom" uk-lightbox>
+<div class="uk-border-rounded service_background uk-padding-small uk-padding-remove-bottom">
 <a href="${e.img}" class="uk-inline">
 <img src="${e.img}" alt="">
 </a>

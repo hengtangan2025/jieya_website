@@ -1,4 +1,5 @@
 import * as Post from './post'
+
 var policStr = ""
 Post.index_banner.forEach(e => {
     policStr += `<li>
@@ -25,7 +26,7 @@ Post.index_section.forEach(e => {
 })
 document.getElementById("index_section").innerHTML = sectionStr;
 
-var sectionStr1=''
+var sectionStr1 = ''
 Post.index_service.forEach(e => {
     sectionStr1 += `<div class="uk-text-center curson">
 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -35,18 +36,17 @@ Post.index_service.forEach(e => {
     <div>${e.name}</div>
     <div>${e.dec}</div>
 </div>
-    <div class="uk-transition-slide-bottom uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal  uk-border-rounded border-radius uk-visible@s">
-   <div class="uk-position-bottom-right uk-margin-medium-right">
-    <a href="${e.href}" class="uk-margin-remove text-color font-size20">查看详情</a>
-    <span uk-icon="arrow-right"></span>
+    <div class="uk-transition-slide-bottom uk-position-bottom policy_content padding20 uk-border-rounded border-radius uk-visible@s">
+        <div class="uk-position-bottom-right uk-margin-small-right">
+        <a href="${e.href}" class="uk-margin-remove text-color font-size18">查看详情</a>
+        <img src="${require('../images/arrow-right.png')}" alt="" class="arrow">
 </div>
 </div>
-<div class="uk-transition-slide-bottom uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal uk-border-rounded border-radius uk-hidden@s">
+<div class="uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal uk-border-rounded border-radius uk-hidden@s">
 <div class="uk-position-bottom-right uk-margin-small-right">
- <a href="${e.href}" class="uk-margin-remove text-color font-size20">查看详情</a>
-    <span uk-icon="arrow-right"></span>
+ <a href="${e.href}" class="uk-margin-remove text-color font-size18">查看详情</a>
+    <img src="${require('../images/arrow-right.png')}" alt="" class="arrow">
 </div>
-
 </div>
 </div>
 </div>`
