@@ -229,6 +229,17 @@
   border-radius: 5px;
   background: rgb(255, 205, 49);
 }
+
+.service_style{
+  background: #fff;
+  color: #34A4B0;
+  margin: 0 30px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.service_images{
+  width: 178px;
+}
 @media (max-width: 500px){
   .font-size24{
     font-size: 20px !important;
