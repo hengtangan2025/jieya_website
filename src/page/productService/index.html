@@ -19,6 +19,7 @@
         }
         .swiper-slide {
             text-align: center;
+            text-align: center;
             font-size: 18px;
             background: #fff;
             display: -webkit-box;
@@ -38,9 +39,9 @@
 </head>
 <body>
 <!--头部-->
-<div class="fixed-top">
-    <nav class="nav_background uk-position-fixed uk-position-z-index uk-width-1-1 uk-padding-large uk-padding-remove-vertical"
-         uk-navbar="mode: click">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="nav_background uk-padding-large uk-padding-remove-vertical uk-navbar-container"
+         uk-navbar="mode: click" style="position: relative; z-index: 980;">
         <div class="uk-navbar-left">
             <div class="uk-flex uk-flex-center uk-flex-middle">
                 <a class="uk-navbar-item uk-logo index_logo uk-light" href="/">
@@ -325,9 +326,9 @@
 <div class="uk-container uk-section">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
-                    <img src="../../images/service_banner1.png" alt="">
+                    <img src="../../images/service_banner1.png" alt="" class="swiper_images">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
                         <div class="uk-padding-small uk-padding-remove-horizontall text-color uk-visible@s">
                             预约接待室
@@ -336,9 +337,9 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
-                    <img src="../../images/service_banner2.png" alt="">
+                    <img src="../../images/service_banner2.png" alt="" class="swiper_images">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
                         <div class="uk-padding-small uk-padding-remove-horizontall text-color uk-visible@s">
                             心理测评室
@@ -347,7 +348,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner3.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -358,7 +359,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner4.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -369,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner5.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -380,7 +381,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner6.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -391,7 +392,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner7.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -402,7 +403,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper_images">
                 <div class="uk-inline">
                     <img src="../../images/service_banner8.png" alt="">
                     <div class="uk-overlay-primary uk-position-bottom uk-dark">
@@ -417,17 +418,6 @@
         </div>
     </div>
 </div>
-<!--/轮播图-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: true
-    });
-</script>
 <!--减压放松类-->
 <div id="facility">
     <div class="uk-margin-top uk-container">
@@ -606,16 +596,20 @@
             </div>
         </div>
     </div>
-    <div class="foot_bottom uk-padding-small uk-visible@s" >
-        <div class="uk-text-center text-color font-size18">
+    <div class="foot_bottom uk-padding-small uk-visible@s">
+        <div class="uk-text-center text-color font-size10">
             <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color uk-margin-right">浙ICP备19051125号</a>©
-            2020 <span>解压科技</span>. All rights reserved.
+            <div id="yearTimes" style="display: inline"></div>
+            <span>解压科技</span>. All rights reserved.
         </div>
     </div>
-    <div class="foot_bottom uk-padding-small uk-hidden@s" >
-        <div class="uk-text-center text-color font-size18">
-            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color uk-margin-right">浙ICP备19051125号</a>
-            <div>© 2020 <span>解压科技</span>. All rights reserved.</div>
+    <div class="foot_bottom uk-padding-small uk-hidden@s">
+        <div class="uk-text-center text-color font-size10">
+            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color">浙ICP备19051125号</a>
+            <div>©
+                <div id="yearTime" style="display: inline"></div>
+                <span>解压科技</span>. All rights reserved.
+            </div>
         </div>
     </div>
 </div>
@@ -628,6 +622,8 @@
         <img src="../../images/goTop.png" alt="">
     </div>
 </div>
+<!--/轮播图-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script type="text/javascript">
     window.onload = function () {
         var top = document.getElementById("gotop");
@@ -650,6 +646,14 @@
             }, 10);
         }
     }
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView:'auto',
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true
+    });
+    document.getElementById('yearTimes').innerHTML = new Date().getFullYear();
+    document.getElementById('yearTime').innerHTML = new Date().getFullYear()
 </script>
 </body>
 

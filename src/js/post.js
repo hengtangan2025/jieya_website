@@ -510,7 +510,7 @@ export const index_service =
             href:'./page/productService#consultingRoom'
         },{
             img: require('../images/server_7.png'),
-            name:'心理辅导室建设',
+            name:'心理辅导室设施',
             dec:'',
             href:'./page/productService#facility'
         },{

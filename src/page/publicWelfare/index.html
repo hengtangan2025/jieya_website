@@ -7,9 +7,9 @@
 </head>
 <body>
 <!--头部-->
-<div class="fixed-top">
-    <nav class="nav_background uk-position-fixed uk-position-z-index uk-width-1-1 uk-padding-large uk-padding-remove-vertical"
-         uk-navbar="mode: click">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="nav_background uk-padding-large uk-padding-remove-vertical uk-navbar-container"
+         uk-navbar="mode: click" style="position: relative; z-index: 980;">
         <div class="uk-navbar-left">
             <div class="uk-flex uk-flex-center uk-flex-middle">
                 <a class="uk-navbar-item uk-logo index_logo uk-light" href="/">
@@ -48,8 +48,8 @@
 </div>
 <!--/头部-->
 <!--section-->
-<div class="uk-section">
-    <div class="uk-container uk-padding uk-margin-top">
+<div >
+    <div class="uk-container uk-margin-medium-top">
         <div class="uk-h2">滴水公益合作报道</div>
         <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin border_style secion_hover uk-border-rounded" uk-grid>
             <div class="uk-card-media-left uk-cover-container">
@@ -100,8 +100,8 @@
     <div class="uk-container">
         <div class="" uk-grid >
             <div class="uk-width-5-6 uk-flex-left uk-margin-top">
-                <div>
-                    <div class="">有任何合作意向和建议可以通过以下方式联系</div>
+                <div class="font-size10">
+                    <div class="">有任何合作意向和建议可以通过以下方式联系我们：</div>
                     <div class="uk-margin-top">邮箱：jykj_u@163.com</div>
                     <div class="uk-margin-small-top">联系电话：(0571) 8895 3801</div>
                     <div class="uk-margin-small-top">地址：浙江大学国家大学科技园</div>
@@ -109,23 +109,31 @@
             </div>
             <div class="uk-flex-right uk-margin-top">
                 <img src="../../images/xinfu.jpg" alt="" class="logo_image">
-                <div class="uk-text-center uk-margin-top">微信公众号</div>
+                <div class="uk-text-center uk-margin-top font-size10">微信公众号</div>
             </div>
         </div>
     </div>
-    <div class="foot_bottom uk-padding-small uk-visible@s" >
-        <div class="uk-text-center text-color font-size18">
+    <div class="foot_bottom uk-padding-small uk-visible@s">
+        <div class="uk-text-center text-color font-size10">
             <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color uk-margin-right">浙ICP备19051125号</a>©
-            2020 <span>解压科技</span>. All rights reserved.
+            <div id="yearTimes" style="display: inline"></div>
+            <span>解压科技</span>. All rights reserved.
         </div>
     </div>
-    <div class="foot_bottom uk-padding-small uk-hidden@s" >
-        <div class="uk-text-center text-color font-size18">
-            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color uk-margin-right">浙ICP备19051125号</a>
-            <div>© 2020 <span>解压科技</span>. All rights reserved.</div>
+    <div class="foot_bottom uk-padding-small uk-hidden@s">
+        <div class="uk-text-center text-color font-size10">
+            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color">浙ICP备19051125号</a>
+            <div>©
+                <div id="yearTime" style="display: inline"></div>
+                <span>解压科技</span>. All rights reserved.
+            </div>
         </div>
     </div>
 </div>
 <!--/footer-->
+<script type="text/javascript">
+    document.getElementById('yearTimes').innerHTML = new Date().getFullYear();
+    document.getElementById('yearTime').innerHTML = new Date().getFullYear()
+</script>
 </body>
 </html>

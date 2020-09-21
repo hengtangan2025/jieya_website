@@ -57,7 +57,7 @@ html{
   height: 367px;
 }
 .nav_background{
-  background: #36425F;
+  background: #36425F !important;
   color: #fff;
 }
 .conten-border {
@@ -71,6 +71,9 @@ html{
 }
 .index_foot{
   padding: 16px 0;
+}
+.swiper_images{
+  width: 380px;
 }
 .index_login{
   width: 60px;
@@ -89,8 +92,8 @@ html{
   align-content: center;
 }
 .logo_image{
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
 }
 //首页css
 .banner_bottom_image{
@@ -185,6 +188,9 @@ html{
 }
 .font-size16{
   font-size: 16px !important;
+}
+.font-size10{
+  font-size: 10px !important;
 }
 .slider {
   position: relative;
