@@ -37,15 +37,15 @@ Post.index_service.forEach(e => {
     <div>${e.dec}</div>
 </div>
     <div class="uk-transition-slide-bottom uk-position-bottom policy_content padding20 uk-border-rounded border-radius uk-visible@s">
-        <div class="uk-position-bottom-right uk-margin-small-right">
+        <div class="uk-margin-small-right uk-position-center">
         <a href="${e.href}" class="uk-margin-remove text-color font-size18">查看详情</a>
         <img src="${require('../images/arrow-right.png')}" alt="" class="arrow">
 </div>
 </div>
 <div class="uk-position-bottom policy_content uk-padding-small uk-padding-remove-horizontal uk-border-rounded border-radius uk-hidden@s">
-<div class="uk-position-bottom-right uk-margin-small-right">
+<div class="uk-position-center uk-margin-small-right">
  <a href="${e.href}" class="uk-margin-remove text-color font-size18">查看详情</a>
-    <img src="${require('../images/arrow-right.png')}" alt="" class="arrow">
+    <img src="${require('../images/arrow-right.png')}" alt="" class="arrow-right">
 </div>
 </div>
 </div>
