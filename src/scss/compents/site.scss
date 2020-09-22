@@ -67,7 +67,7 @@ html{
   background: #36425F;
   color: #fff;
   //font-size: 14px;
-  margin-top: 48px;
+  //margin-top: 48px;
 }
 .index_foot{
   padding: 16px 0;
@@ -191,6 +191,46 @@ html{
 }
 .font-size10{
   font-size: 10px !important;
+}
+.program_images{
+  width: 160px;
+  height: 160px;
+}
+.program_service_image{
+  width: 180px;
+  height: 360px;
+}
+.program_service{
+  width: 140px;
+  height: 140px;
+  border:1px solid #34A4B0;
+}
+
+.program_heart1{
+  width: 50px;
+  height: 58px;
+  margin: 26px 45px 14px
+}
+.program_heart2{
+  width: 40px;
+  height: 58px;
+  margin: 26px 50px 14px
+}
+.program_color{
+  color: #34A4B0 !important;
+}.program_color1{
+  color: #36425F !important;
+}
+
+.program_heart3{
+  width: 58px;
+  height: 42px;
+  margin: 34px 41px 22px
+}
+.program_heart4{
+  width: 58px;
+  height: 54px;
+  margin: 28px 41px 16px
 }
 .slider {
   position: relative;

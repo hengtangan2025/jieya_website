@@ -32,6 +32,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             chunks: ['index'],
+            filename: 'page/program/index.html',
+            template: 'src/page/program/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            chunks: ['index'],
             filename: 'page/publicWelfare/index.html',
             template: 'src/page/publicWelfare/index.html'
         }),

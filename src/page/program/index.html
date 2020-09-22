@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<!--头部-->
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="nav_background uk-padding-large uk-padding-remove-vertical uk-navbar-container"
+         uk-navbar="mode: click" style="position: relative; z-index: 980;">
+        <div class="uk-navbar-left">
+            <div class="uk-flex uk-flex-center uk-flex-middle">
+                <a class="uk-navbar-item uk-logo index_logo uk-light" href="/">
+                    <img src="../../images/logo1.png" width="130" height="30" class="uk-margin-small-right uk-light">
+                </a>
+                <!--                <div class="uk-text-justify">-->
+                <!--                    <div class="uk-text-middle">解&nbsp;&nbsp;&nbsp;压&nbsp;&nbsp;&nbsp;科&nbsp;&nbsp;&nbsp;技</div>-->
+                <!--                    <div class="uk-text-middle uk-visible@m" style="font-size: 10px">JIEYA&nbsp;TECHNOLOGY</div>-->
+                <!--                </div>-->
+            </div>
+            <ul class="uk-navbar-nav uk-margin-left uk-visible@m">
+                <li class="logo_width"><a href="/">首页</a></li>
+                <li class="logo_width uk-active"><a href="../../page/program">小程序</a></li>
+                <li class="logo_width"><a href="../../page/publicWelfare">公益事业</a></li>
+                <li class="logo_width"><a href="../../page/policDynamics">政策动态</a></li>
+                <li class="logo_width"><a href="../../page/contact">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <!--            <a class="uk-button uk-button-default uk-light uk-button-small uk-border-rounded uk-visible@m" href="../../page/login">-->
+            <!--                登&nbsp;录-->
+            <!--            </a>-->
+            <a href="#offcanvas-nav-primary" class="uk-hidden@m uk-navbar-nav" uk-toggle uk-navbar-toggle-icon></a>
+        </div>
+    </nav>
+</div>
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true;mode:reveal">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li><a href="/">首页</a></li>
+            <li class="uk-active"><a href="../../page/program">小程序</a></li>
+            <li class=""><a href="../../page/publicWelfare">公益事业</a></li>
+            <li><a href="../../page/policDynamics">政策动态</a></li>
+            <li><a href="../../page/contact">联系我们</a></li>
+            <!--            <li><a href="../../page/login">登录</a></li>-->
+        </ul>
+    </div>
+</div>
+<div class="uk-section uk-container">
+    <div class="uk-panel">
+        <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent" src="../../images/program_6.png" width="408px" height="492px">
+        <div class="uk-text-left uk-section-xlarge uk-visible@m">
+            <p class="uk-h1 program_color">心理测评</p>
+            <p class="program_color1">丰富的量表，一键生成个人报告，团体报告。</p>
+        </div>
+        <div class="uk-text-center uk-hidden@m">
+            <p class="uk-h3 program_color">心理测评</p>
+            <p class="program_color1">丰富的量表，一键生成个人报告，团体报告。</p>
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-container">
+    <div class="uk-flex-middle" uk-grid>
+        <div class="uk-width-2-3@m uk-flex-first">
+            <div class="uk-visible@m">
+                <p class="uk-h3">心理咨询</p>
+                <p>丰富的量表，一键生成个人报告，团体报告。</p>
+                <div class="uk-flex">
+                    <div class="program_service uk-border-rounded uk-margin-small-right">
+                        <img src="../../images/program_heart1.png" alt="" class="program_heart1">
+                        <div class="uk-text-center program_color">图文咨询</div>
+                    </div>
+                    <div class="program_service uk-border-rounded uk-margin-small-right">
+                        <img src="../../images/program_heart2.png" alt="" class="program_heart2">
+                        <div class="uk-text-center program_color">语音咨询</div>
+                    </div>
+                    <div class="program_service uk-border-rounded uk-margin-small-right">
+                        <img src="../../images/program_heart3.png" alt="" class="program_heart3">
+                        <div class="uk-text-center program_color">视频咨询</div>
+                    </div>
+                    <div class="program_service uk-border-rounded">
+                        <img src="../../images/program_heart4.png" alt="" class="program_heart4">
+                        <div class="uk-text-center program_color">线下咨询</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-hidden@m uk-text-center">
+                <p class="uk-h3">心理咨询</p>
+                <p>丰富的量表，一键生成个人报告，团体报告。</p>
+                <div class="uk-flex  uk-flex-center">
+                    <div class="program_service uk-border-rounded uk-margin-small-right">
+                        <img src="../../images/program_heart1.png" alt="" class="program_heart1">
+                        <div class="uk-text-center program_color">图文咨询</div>
+                    </div>
+                    <div class="program_service uk-border-rounded">
+                        <img src="../../images/program_heart2.png" alt="" class="program_heart2">
+                        <div class="uk-text-center program_color">语音咨询</div>
+                    </div>
+
+                </div>
+                <div class="uk-flex uk-flex-center uk-margin-top">
+                    <div class="program_service uk-border-rounded uk-margin-small-right">
+                        <img src="../../images/program_heart3.png" alt="" class="program_heart3">
+                        <div class="uk-text-center program_color">视频咨询</div>
+                    </div>
+                    <div class="program_service uk-border-rounded">
+                        <img src="../../images/program_heart4.png" alt="" class="program_heart4">
+                        <div class="uk-text-center program_color">线下咨询</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-width-1-3@m uk-text-center">
+            <img src="../../images/program_heart5.png" alt="Image" width="408px" height="492px">
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-container uk-padding-remove-top">
+    <div class="uk-panel">
+        <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent" src="../../images/program_1.png"
+             width="180" height="367" alt="Example image">
+        <div class="uk-text-left uk-section-xlarge uk-visible@m">
+            <p class="uk-h3">医生咨询师</p>
+            <p>便捷的管理界面，便于为患者提供咨询服务</p>
+        </div>
+        <div class="uk-text-center uk-hidden@m">
+            <p class="uk-h3">医生咨询师</p>
+            <p>便捷的管理界面，便于为患者提供咨询服务</p>
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-container uk-padding-remove-top">
+    <div class="uk-panel">
+        <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent" src="../../images/program_2.png"
+             width="180" height="367" alt="Example image">
+        <div class="uk-text-left uk-section-xlarge uk-visible@m">
+            <p class="uk-h3">集团定制</p>
+            <p>集团心理体检业务。小程序模块化定制。</p>
+        </div>
+        <div class="uk-text-center uk-hidden@m">
+            <p class="uk-h3">集团定制</p>
+            <p>集团心理体检业务。小程序模块化定制。</p>
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-container uk-padding-remove-top">
+    <div class="uk-text-center program_color">立即试用</div>
+    <div class="uk-flex uk-flex-center uk-margin-large-top" uk-grid uk-lightbox="animation: slide">
+        <div>
+            <a class="uk-inline" href="../../images/program_3.png">
+                <img src="../../images/program_3.png" alt="" class="program_images">
+            </a>
+            <div class="uk-text-center uk-margin-small">
+                <div>解压心服</div>
+                <div>（用户端）</div>
+            </div>
+        </div>
+        <div>
+            <a class="uk-inline" href="../../images/program_4.png">
+                <img src="../../images/program_4.png" alt="" class="program_images">
+            </a>
+            <div class="uk-text-center uk-margin-small">
+                <div>解压心理工作站</div>
+                <div>（医生咨询师端）</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div class="uk-container">
+        <div class="" uk-grid>
+            <div class="uk-width-2-3 uk-flex-left@s uk-margin-top">
+                <div class="font-size10">
+                    <div class="">有任何合作意向和建议可以通过以下方式联系我们：</div>
+                    <div class="uk-margin-top">邮箱：jykj_u@163.com</div>
+                    <div class="uk-margin-small-top">联系电话：(0571) 8895 3801</div>
+                    <div class="uk-margin-small-top">地址：浙江大学国家大学科技园</div>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap-between">
+                <div class="uk-flex-right@s uk-margin-top uk-margin-right">
+                    <img src="../../images/xinfu.jpg" alt="" class="logo_image">
+                    <div class="uk-text-center uk-margin-small-top uk-margin-small-bottom font-size10">微信公众号</div>
+                </div>
+                <div class="uk-flex-right@s uk-margin-top">
+                    <img src="../../images/xinfu.jpg" alt="" class="logo_image">
+                    <div class="uk-text-center uk-margin-small-top uk-margin-small-bottom font-size10">微信公众号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot_bottom uk-padding-small uk-visible@s">
+        <div class="uk-text-center text-color font-size10">
+            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color uk-margin-right">浙ICP备19051125号</a>©
+            <div id="yearTimes" style="display: inline"></div>
+            <span>解压科技</span>. All rights reserved.
+        </div>
+    </div>
+    <div class="foot_bottom uk-padding-small uk-hidden@s">
+        <div class="uk-text-center text-color font-size10">
+            <a target="_blank" href="https://beian.miit.gov.cn/" class="text-color">浙ICP备19051125号</a>
+            <div>©
+                <div id="yearTime" style="display: inline"></div>
+                <span>解压科技</span>. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.getElementById('yearTimes').innerHTML = new Date().getFullYear();
+    document.getElementById('yearTime').innerHTML = new Date().getFullYear()
+</script>
+</body>
+</html>
