@@ -436,89 +436,96 @@ export const index_section =
     [
         {
             img: require('../images/index_1.png'),
-            href_img:require('../images/xinzhichang.jpg'),
-            name:'心理预约咨询',
-            dec:'如果需要预约咨询师&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码   '
+            href_img: require('../images/xinzhichang.jpg'),
+            name: '心理预约咨询',
+            dec: '如果需要预约咨询师&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码   '
         },
         {
             img: require('../images/index_2.png'),
-            href_img:require('../images/contact.png'),
-            name:'咨询师入驻',
-            dec:'如果您是心理咨询师 欢迎联系客服'
+            href_img: require('../images/contact.png'),
+            name: '咨询师入驻',
+            dec: '如果您是心理咨询师 欢迎联系客服'
         },
         {
             img: require('../images/index_3.png'),
-            href_img:require('../images/contact.png'),
-            name:'机构入驻',
-            dec:'如果您是心理服务机构 欢迎联系客服'
+            href_img: require('../images/contact.png'),
+            name: '机构入驻',
+            dec: '如果您是心理服务机构 欢迎联系客服'
         },
         {
             img: require('../images/index_4.png'),
-            href_img:require('../images/contact.png'),
-            name:'合作服务',
-            dec:'如果您希望合作欢迎联系客服信二维码'
+            href_img: require('../images/contact.png'),
+            name: '合作服务',
+            dec: '如果您希望合作欢迎联系客服信二维码'
         }
     ]
 export const service_less_press =
     [
         {
             img: require('../images/offline1.png'),
-            name:'减压课程',
-            dec:'心理调节和心理障碍预防 负面情绪疏导和压力调适 情绪和压力管理 心理危机干预 正念生活'
+            name: '减压课程',
+            dec: '心理调节和心理障碍预防 负面情绪疏导和压力调适 情绪和压力管理 心理危机干预 正念生活'
         }, {
-            img: require('../images/offline2.png'),
-            name:'企业员工课程',
-            dec:'沟通艺术与领导艺术 幸福的员工是什么样子？ 工作家庭重点平衡 职场心理学'
-        }, {
-            img: require('../images/offline3.png'),
-            name:'生活课程',
-            dec:'夫妻沟通的心法与方法 亲子关系心视角 实用说话技巧 社交生存术'
-        }
+        img: require('../images/offline2.png'),
+        name: '企业员工课程',
+        dec: '沟通艺术与领导艺术 幸福的员工是什么样子？ 工作家庭重点平衡 职场心理学'
+    }, {
+        img: require('../images/offline3.png'),
+        name: '生活课程',
+        dec: '夫妻沟通的心法与方法 亲子关系心视角 实用说话技巧 社交生存术'
+    }
 
     ]
 export const index_service =
     [
         {
             img: require('../images/server_1.png'),
-            name:'心理体检与评估',
-            dec:'',
-            href:'./page/productService#mentalHealth'
-        },{
-            img: require('../images/server_2.png'),
-            name:'线上心理咨询',
-            dec:'',
-            href:'./page/productService#onlines'
-        },{
-            img: require('../images/server_3.png'),
-            name:'线下门诊',
-            dec:'',
-            href:'./page/productService#offline'
-        },{
-            img: require('../images/server_4.png'),
-            name:'培训课程',
-            dec:'',
-            href:'./page/productService#offlineLecture'
-        },{
-            img: require('../images/server_5.png'),
-            name:'VIP服务',
-            dec:'',
-            href:'./page/productService#vip'
-        },{
-            img: require('../images/server_6.png'),
-            name:'心理咨询室建设',
-            dec:'',
-            href:'./page/productService#consultingRoom'
-        },{
-            img: require('../images/server_7.png'),
-            name:'心理辅导室设施',
-            dec:'',
-            href:'./page/productService#facility'
-        },{
-            img: require('../images/server_8.png'),
-            name:'心理健康',
-            dec:'互联网系统开发',
-            href:'./page/productService#bottom'
-        }
+            name: '心理体检与评估',
+            dec: '',
+            href: './page/productService?p=mentalHealth',
+            anchorLink: 'mentalHealth'
+        }, {
+        img: require('../images/server_2.png'),
+        name: '线上心理咨询',
+        dec: '',
+        href: './page/productService?p=onlines',
+        anchorLink: 'onlines'
+    }, {
+        img: require('../images/server_3.png'),
+        name: '线下门诊',
+        dec: '',
+        href: './page/productService?p=offline',
+        anchorLink: 'offline'
+    }, {
+        img: require('../images/server_4.png'),
+        name: '培训课程',
+        dec: '',
+        href: './page/productService?p=offlineLecture',
+        anchorLink: 'offlineLecture'
+    }, {
+        img: require('../images/server_5.png'),
+        name: 'VIP服务',
+        dec: '',
+        href: './page/productService?p=vip',
+        anchorLink: 'vip'
+    }, {
+        img: require('../images/server_6.png'),
+        name: '心理咨询室建设',
+        dec: '',
+        href: './page/productService?p=consultingRoom',
+        anchorLink: 'consultingRoom'
+    }, {
+        img: require('../images/server_7.png'),
+        name: '心理辅导室设施',
+        dec: '',
+        href: './page/productService?p=facility',
+        anchorLink: 'facility'
+    }, {
+        img: require('../images/server_8.png'),
+        name: '心理健康',
+        dec: '互联网系统开发',
+        href: './page/productService?p=bottom',
+        anchorLink: 'bottom'
+    }
 
     ]
-

@@ -4,5 +4,3 @@ import Icons from 'uikit/dist/js/uikit-icons';
 UIkit.use(Icons);
 
 // 可以从导入的UIkit引用调用组件
-// UIkit.notification('Hello world.');
-// document.getElementsByClassName('yearTimes').innerHtml=date.getFullYear()

@@ -1,4 +1,26 @@
 import * as Post from './post';
+function GetUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = encodeURI(window.location.search).substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+}
+
+//使用获取参数方法
+var name = decodeURI(GetUrlParam("p"));
+console.log(name);
+if (name === undefined) {
+    window.location.href = '../../page/login';//404
+}
+
+for (let i=0;i<Post.index_service.length;i++){
+    if (Post.index_service[i].anchorLink == name) {
+        document.getElementById(Post.index_service[i].anchorLink).style.display="block";
+    }else{
+        document.getElementById(Post.index_service[i].anchorLink).style.display="none";
+    }
+}
+
 var policStr = ""
 Post.service_top.forEach(e => {
     policStr += `<div>
