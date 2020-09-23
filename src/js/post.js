@@ -438,7 +438,7 @@ export const index_section =
             img: require('../images/index_1.png'),
             href_img: require('../images/xinzhichang.jpg'),
             name: '心理预约咨询',
-            dec: '如果需要预约咨询师&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码   '
+            dec: '如果需要预约咨询师,&nbsp;&nbsp;&nbsp;&nbsp;请扫描二维码   '
         },
         {
             img: require('../images/index_2.png'),
@@ -450,13 +450,13 @@ export const index_section =
             img: require('../images/index_3.png'),
             href_img: require('../images/contact.png'),
             name: '机构入驻',
-            dec: '如果您是心理服务机构 欢迎联系客服'
+            dec: '如果您是心理服务机构，欢迎联系客服'
         },
         {
             img: require('../images/index_4.png'),
             href_img: require('../images/contact.png'),
             name: '合作服务',
-            dec: '如果您希望合作欢迎联系客服信二维码'
+            dec: '如果您希望合作，欢迎联系客服信二维码'
         }
     ]
 export const service_less_press =
@@ -482,49 +482,49 @@ export const index_service =
             img: require('../images/server_1.png'),
             name: '心理体检与评估',
             dec: '',
-            href: './page/productService?p=mentalHealth',
+            href: './page/productService?name=mentalHealth',
             anchorLink: 'mentalHealth'
         }, {
         img: require('../images/server_2.png'),
         name: '线上心理咨询',
         dec: '',
-        href: './page/productService?p=onlines',
+        href: './page/productService?name=onlines',
         anchorLink: 'onlines'
     }, {
         img: require('../images/server_3.png'),
         name: '线下门诊',
         dec: '',
-        href: './page/productService?p=offline',
+        href: './page/productService?name=offline',
         anchorLink: 'offline'
     }, {
         img: require('../images/server_4.png'),
         name: '培训课程',
         dec: '',
-        href: './page/productService?p=offlineLecture',
+        href: './page/productService?name=offlineLecture',
         anchorLink: 'offlineLecture'
     }, {
         img: require('../images/server_5.png'),
         name: 'VIP服务',
         dec: '',
-        href: './page/productService?p=vip',
+        href: './page/productService?name=vip',
         anchorLink: 'vip'
     }, {
         img: require('../images/server_6.png'),
         name: '心理咨询室建设',
         dec: '',
-        href: './page/productService?p=consultingRoom',
+        href: './page/productService?name=consultingRoom',
         anchorLink: 'consultingRoom'
     }, {
         img: require('../images/server_7.png'),
         name: '心理辅导室设施',
         dec: '',
-        href: './page/productService?p=facility',
+        href: './page/productService?name=facility',
         anchorLink: 'facility'
     }, {
         img: require('../images/server_8.png'),
         name: '心理健康',
         dec: '互联网系统开发',
-        href: './page/productService?p=bottom',
+        href: './page/productService?name=bottom',
         anchorLink: 'bottom'
     }
 

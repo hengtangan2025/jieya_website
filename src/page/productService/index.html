@@ -12,11 +12,13 @@
             margin: 0;
             padding: 0;
         }
+
         .swiper-container {
             width: 100%;
             height: 100%;
             z-index: 0;
         }
+
         .swiper-slide {
             text-align: center;
             text-align: center;
@@ -54,7 +56,7 @@
             </div>
             <ul class="uk-navbar-nav uk-margin-left uk-visible@m">
                 <li class="logo_width"><a href="/">首页</a></li>
-                <li class="uk-active logo_width"><a href="../../page/program">小程序</a></li>
+                <li class="logo_width"><a href="../../page/program">小程序</a></li>
                 <li class="logo_width"><a href="../../page/publicWelfare">公益事业</a></li>
                 <li class="logo_width"><a href="../../page/policDynamics">政策动态</a></li>
                 <li class="logo_width"><a href="../../page/contact">联系我们</a></li>
@@ -74,7 +76,7 @@
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             <li><a href="/">首页</a></li>
-            <li class="uk-active"><a href="../../page/program">小程序</a></li>
+            <li class=""><a href="../../page/program">小程序</a></li>
             <li><a href="../../page/publicWelfare">公益事业</a></li>
             <li><a href="../../page/policDynamics">政策动态</a></li>
             <li><a href="../../page/contact">联系我们</a></li>
@@ -82,7 +84,7 @@
         </ul>
     </div>
 </div>
-<div class="uk-section" id="mentalHealth">
+<div class="uk-section" id="mentalHealth" style="display: none">
     <div class="uk-container uk-text-center">
         <div class="uk-h3">心理体检与评估</div>
         <div class="font-size20">心理体检作用：</div>
@@ -95,47 +97,56 @@
             </div>
         </div>
     </div>
-</div>
-<!--/头部-->
-<div id="onlines" class=" uk-margin-large-top">
-    <div class="uk-visible@m">
-        <div class="uk-section ">
-            <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../../images/service_background1.png" style="background-size: 100% 100%;height: 380px" uk-img>
+    <div class="uk-visible@m uk-margin-large-top">
+        <div class="uk-section">
+            <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                 data-src="../../images/service_background1.png" style="background-size: 100% 100%;height: 380px"
+                 uk-img>
                 <div>
-                    <img src="../../images/service_heart8.png" alt="" class="uk-position-right" style="top: -126px;right: 240px" width="409" height="480">
-                    <div class="uk-position-center-left font-size24 text-color" style="left: 240px">线下报告解读</div>
+                    <img src="../../images/service_heart8.png" alt="" class="uk-position-right"
+                         style="top: -126px;right: 240px" width="409" height="480">
+                    <div class="uk-position-center-left font-size24 text-color" style="left: 240px">
+                        在做完心理测评后，可安排心理咨询师上门提供心理测评报告解读
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="uk-hidden@m">
-        <img src="../../images/service_heart8.png" alt=""  class="uk-align-center" width="250" height="480">
-        <div class="font-size24 uk-text-center">线下报告解读</div>
+        <img src="../../images/service_heart8.png" alt="" class="uk-align-center" width="250" height="480">
+        <div class="font-size24 uk-text-center">在做完心理测评后，可安排心理咨询师上门提供心理测评报告解读</div>
     </div>
+</div>
+<!--/头部-->
+<div id="onlines" class=" uk-margin-large-top" style="display: none">
+
     <div class="uk-visible@m">
         <div class="uk-section uk-margin-large-top ">
-            <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="../../images/service_background1.png" style="background-size: 100% 100%;height: 380px" uk-img>
+            <div class="uk-height-medium uk-flex uk-position-relative uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                 data-src="../../images/service_background1.png" style="background-size: 100% 100%;height: 380px"
+                 uk-img>
                 <div>
-                    <img src="../../images/service_heart7.png" alt="" class="uk-position-left" style="top: -126px;left: 240px" width="409" height="480">
-                    <div class="uk-position-center-right font-size24 text-color" style="right: 240px">线下报告解读</div>
+                    <img src="../../images/service_heart7.png" alt="" class="uk-position-left"
+                         style="top: -126px;left: 240px" width="409" height="480">
+                    <!--                    <div class="uk-position-center-right font-size24 text-color" style="right: 240px">线下报告解读</div>-->
                 </div>
             </div>
         </div>
     </div>
 
     <div class="uk-section uk-hidden@m">
-        <img src="../../images/service_heart7.png" alt=""  class="uk-align-center" width="250" height="480">
+        <img src="../../images/service_heart7.png" alt="" class="uk-align-center" width="250" height="480">
         <div class="font-size24 uk-text-center">线下报告解读</div>
     </div>
 </div>
 <!--门诊-->
-<div id="offline">
-    <div class="uk-section uk-container" >
+<div id="offline" style="display: none">
+    <div class="uk-section uk-container">
         <div class="uk-text-center uk-h3">咨询点及门诊线上预约</div>
         <div class="uk-text-center uk-margin-large-top">
             <img data-src="../../images/process_pic.png" alt="" uk-img>
         </div>
-        <div class="uk-child-width-1-2 uk-text-center uk-margin-large-top" uk-grid
+        <div class="uk-child-width-1-2@s uk-text-center uk-margin-large-top" uk-grid
              uk-lightbox="animation: slide">
             <div>
                 <a class="uk-inline" href="../../images/offline_process_1.png">
@@ -143,14 +154,13 @@
                 </a>
             </div>
             <div>
-                <a class="uk-inline" href="../../images/offline_process_2.png">
-                    <img src="../../images/offline_process_2.png" alt="">
-                </a>
+                <div class="uk-text-center uk-margin-medium-top font-size20">目前可预约的门诊点</div>
+                <div class="uk-text-center uk-margin-medium-top font-size20">城东分部：海亮馨惠馨医院（每周日上午8:00 - 12:00）</div>
+                <div class="uk-text-center font-size20">城西分部：西湖区文新街道社区卫生服务中心</div>
+                <div>（每周四上午16:00 - 19:30）</div>
             </div>
         </div>
-        <div class="uk-text-center uk-margin-medium-top font-size20">目前可预约的门诊点</div>
-        <div class="uk-text-center uk-margin-medium-top font-size20">城东分部：海亮馨惠馨医院（每周日上午8:00 - 12:00）</div>
-        <div class="uk-text-center font-size20">城西分部：西湖区文新街道社区卫生服务中心（每周四上午16:00 - 19:30）</div>
+
     </div>
     <div class="uk-section text-color">
         <div class="uk-text-center uk-width-1-1"
@@ -176,9 +186,9 @@
         </div>
     </div>
 </div>
-<div id="offlineLecture">
-    <div class="uk-text-center uk-h2">线下报告解读</div>
-    <div class="uk-text-center font-size20 uk-margin-medium-top">在做完心理测评后，可安排心理咨询师上门提供心理测评报告解读，一般服务时长为3小时</div>
+<div id="offlineLecture" class="uk-section" style="display: none">
+    <!--    <div class="uk-text-center uk-h2">线下报告解读</div>-->
+    <!--    <div class="uk-text-center font-size20 uk-margin-medium-top">在做完心理测评后，可安排心理咨询师上门提供心理测评报告解读，一般服务时长为3小时</div>-->
     <div class="uk-text-center uk-h2">线下心理培训讲座</div>
     <div class="uk-section uk-container">
         <div class="uk-child-width-1-2@s uk-child-width-1-3@m  uk-section uk-container" uk-grid
@@ -186,7 +196,7 @@
         </div>
     </div>
 </div>
-<div id="vip">
+<div id="vip" style="display: none">
     <div class="text-color uk-section">
         <div class="uk-text-center uk-width-1-1"
              style="height: 800px; background-size:100% 100%; -moz-background-size:100% 100%;"
@@ -208,7 +218,7 @@
 
 <!--/门诊-->
 <!--vip下面的一张图片和文字-->
-<div id="consultingRoom">
+<div id="consultingRoom" style="display: none">
     <div class="uk-section uk-container">
         <div>
             <img src="../../images/service_vip_bottom.png" alt="">
@@ -317,11 +327,13 @@
 </div>
 
 <!--减压放松类-->
-<div id="facility">
+<div id="facility" style="display: none">
     <div class="uk-margin-top uk-container">
         <div class="uk-h3 uk-text-center uk-margin-medium-bottom">减压放松类</div>
-        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid uk-lightbox="animation: slide" id="service_top_data">
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid
+             uk-lightbox="animation: slide" id="service_top_data">
         </div>
+        <hr class="uk-divider-icon uk-container">
         <div class="uk-h3 uk-text-center">击打宣泄类</div>
         <div class="uk-text-center uk-margin-medium-bottom" uk-grid uk-lightbox="animation: slide">
             <div class="uk-align-center uk-visible@m">
@@ -349,11 +361,13 @@
         </div>
     </div>
     <div class="uk-container uk-margin-top">
+        <hr class="uk-divider-icon uk-container">
         <div class="uk-h3 uk-text-center uk-margin-medium-bottom">认知行为训练</div>
         <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-margin-medium-bottom"
              uk-grid
              uk-lightbox="animation: slide" id="service_bottom_data">
         </div>
+        <hr class="uk-divider-icon uk-container">
         <div class="uk-h3 uk-text-center">主题科普类</div>
         <div class="uk-text-center uk-margin-medium-bottom" uk-grid uk-lightbox="animation: slide">
             <div class="uk-align-center uk-visible@m">
@@ -377,94 +391,83 @@
             </div>
         </div>
     </div>
-    <div class="uk-section uk-container">
-        <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2 uk-text-center uk-visible@s" uk-grid>
-            <div>
-                <div class="uk-card  uk-card-body font-size24">模块化选择</div>
-            </div>
-            <div>
-                <div class="uk-card  uk-card-body font-size24">可定制区域展示</div>
-            </div>
-
-        </div>
-        <div class="uk-child-width-expand@s uk-child-width-1-4@m uk-text-center" uk-grid uk-lightbox="animation: slide">
-            <div class="uk-card  uk-card-body font-size24 uk-hidden@s">模块化选择</div>
-            <div>
-                <a class="uk-inline" href="../../images/service_bottom_bottom1.png">
-                    <img src="../../images/service_bottom_bottom1.png" alt="">
-                </a>
-                <div class="uk-padding-small uk-padding-remove-horizontal font-size20">职场信息采集页</div>
-            </div>
-            <div>
-                <a class="uk-inline" href="../../images/service_bottom_bottom2.png">
-                    <img src="../../images/service_bottom_bottom2.png" alt="">
-                </a>
-                <div class="uk-padding-small uk-padding-remove-horizontal font-size20">学习信息采集页</div>
-            </div>
-            <div class="uk-card  uk-card-body font-size24 uk-hidden@s">可定制区域展示</div>
-            <div>
-                <a class="uk-inline" href="../../images/service_bottom_bottom3.png">
-                    <img src="../../images/service_bottom_bottom3.png" alt="">
-                </a>
-                <div class="uk-padding-small uk-padding-remove-horizontal font-size20">红色划线处可自定义</div>
-            </div>
-            <div>
-                <a class="uk-inline" href="../../images/service_bottom_bottom4.png">
-                    <img src="../../images/service_bottom_bottom4.png" alt="">
-                </a>
-                <div class="uk-padding-small uk-padding-remove-horizontal font-size20">红色区域可自定义</div>
-            </div>
-        </div>
-        <div class="uk-text-center uk-margin-top uk-h5 font-size20">可自定义模版</div>
-    </div>
 </div>
 <!--/减压放松类-->
-<div class="uk-section uk-container" id="bottom">
-    <div class="uk-child-width-1-2@s  uk-child-width-1-3@l uk-text-center" uk-grid>
+<div class="uk-section uk-container" id="bottom" style="display: none">
+    <div class="uk-card  uk-card-body font-size24 uk-text-center">模块化选择</div>
+    <div class="uk-child-width-expand@s uk-child-width-1-4@m uk-text-center" uk-grid uk-lightbox="animation: slide">
         <div>
-            <div class="uk-card uk-card-body secion_hover border_style uk-border-rounded" style="height: 550px">
-                <div>
-                    <img src="../../images/service_bottom1.png" alt=""
-                         class="banner_bottom_image uk-margin-small-bottom">
-                </div>
-                <div class="uk-h3 uk-margin-large-top">心理预约咨询</div>
-                <div class="uk-padding uk-padding-remove-horizontal uk-margin-medium-top font-size24">
-                    <div>功能涵盖：</div>
-                    <div>创建子管理账户</div>
-                    <div>自主提交服务订单</div>
-                    <div>客户信息录入与管理</div>
-                    <div>服务进度查询</div>
-                </div>
-            </div>
+            <a class="uk-inline" href="../../images/service_bottom_bottom1.png">
+                <img src="../../images/service_bottom_bottom1.png" alt="">
+            </a>
+            <div class="uk-padding-small uk-padding-remove-horizontal font-size20">职场信息采集页</div>
         </div>
         <div>
-            <div class="uk-card secion_hover uk-card-body border_style uk-border-rounded" style="height: 550px">
-                <div>
-                    <img src="../../images/service_bottom2.png" alt=""
-                         class="banner_bottom_image uk-margin-small-bottom">
-                </div>
-                <div class="uk-h3 uk-margin-large-top">系统升级维护</div>
-                <div class="uk-padding uk-padding-remove-horizontal font-size24">
-                    <div>
-                        定期进行系统升级维
-                    </div>
-                    <div>护及功能迭代</div>
-                </div>
-            </div>
+            <a class="uk-inline" href="../../images/service_bottom_bottom2.png">
+                <img src="../../images/service_bottom_bottom2.png" alt="">
+            </a>
+            <div class="uk-padding-small uk-padding-remove-horizontal font-size20">学习信息采集页</div>
         </div>
         <div>
-            <div class="uk-card secion_hover uk-card-body border_style uk-border-rounded" style="height: 550px">
-                <div>
-                    <img src="../../images/service_bottom3.png" alt=""
-                         class="banner_bottom_image uk-margin-small-bottom">
-                </div>
-                <div class="uk-h3 uk-margin-large-top">定制化服务</div>
-                <div class="uk-padding uk-padding-remove-horizontal font-size24">
+            <a class="uk-inline" href="../../images/service_bottom_bottom3.png">
+                <img src="../../images/service_bottom_bottom3.png" alt="">
+            </a>
+            <div class="uk-padding-small uk-padding-remove-horizontal font-size20">红色划线处可自定义</div>
+        </div>
+        <div>
+            <a class="uk-inline" href="../../images/service_bottom_bottom4.png">
+                <img src="../../images/service_bottom_bottom4.png" alt="">
+            </a>
+            <div class="uk-padding-small uk-padding-remove-horizontal font-size20">红色区域可自定义</div>
+        </div>
+    </div>
+    <div class="uk-margin-large-top">
+        <div class="uk-child-width-1-2@s  uk-child-width-1-3@l uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-body secion_hover border_style uk-border-rounded" style="height: 550px">
                     <div>
-                        如已有系统无法满足需求，
+                        <img src="../../images/service_bottom1.png" alt=""
+                             class="banner_bottom_image uk-margin-small-bottom">
                     </div>
-                    <div>可根据要求定制化小程序及</div>
-                    <div>网页版系统</div>
+                    <div class="uk-h3 uk-margin-large-top">心理预约咨询</div>
+                    <div class="uk-padding uk-padding-remove-horizontal uk-margin-medium-top font-size16">
+                        <div>功能涵盖：</div>
+                        <div>创建子管理账户</div>
+                        <div>自主提交服务订单</div>
+                        <div>客户信息录入与管理</div>
+                        <div>服务进度查询</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card secion_hover uk-card-body border_style uk-border-rounded" style="height: 550px">
+                    <div>
+                        <img src="../../images/service_bottom2.png" alt=""
+                             class="banner_bottom_image uk-margin-small-bottom">
+                    </div>
+                    <div class="uk-h3 uk-margin-large-top">系统升级维护</div>
+                    <div class="uk-padding uk-padding-remove-horizontal font-size16">
+                        <div>
+                            定期进行系统升级维
+                        </div>
+                        <div>护及功能迭代</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card secion_hover uk-card-body border_style uk-border-rounded" style="height: 550px">
+                    <div>
+                        <img src="../../images/service_bottom3.png" alt=""
+                             class="banner_bottom_image uk-margin-small-bottom">
+                    </div>
+                    <div class="uk-h3 uk-margin-large-top">定制化服务</div>
+                    <div class="uk-padding uk-padding-remove-horizontal font-size16">
+                        <div>
+                            如已有系统无法满足需求，
+                        </div>
+                        <div>可根据要求定制化小程序及</div>
+                        <div>网页版系统</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -546,14 +549,14 @@
         }
     }
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView:'auto',
+        slidesPerView: 'auto',
         spaceBetween: 30,
         loop: true,
         autoplay: true
     });
     document.getElementById('yearTimes').innerHTML = new Date().getFullYear();
     document.getElementById('yearTime').innerHTML = new Date().getFullYear();
-    document.getElementById("mentalHealth").style.display="none";
+    document.getElementById("mentalHealth").style.display = "none";
 </script>
 </body>
 
