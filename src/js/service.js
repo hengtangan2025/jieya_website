@@ -10,10 +10,8 @@ function GetUrlParam(name) {
 var idName = decodeURI(GetUrlParam("name"));
 
 if (idName === 'null') {
-    console.log(typeof (idName))
     document.getElementById('mentalHealth').style.display="block";
 }else{
-    console.log(typeof (idName))
     for (let i=0;i<Post.index_service.length;i++){
         if (Post.index_service[i].anchorLink == idName) {
             document.getElementById(Post.index_service[i].anchorLink).style.display="block";
@@ -31,7 +29,7 @@ Post.service_top.forEach(e => {
     policStr += `<div>
 <div class="uk-border-rounded service_background uk-padding-small uk-padding-remove-bottom">
 <a href="${e.img}" class="uk-inline">
-<img src="${e.img}" alt="" >
+<img data-src="${e.img}" alt="" uk-img>
 </a>
 <div class="uk-padding-small uk-padding-remove-horizontal font-size24">${e.name}</div>
 </div>
@@ -44,7 +42,7 @@ Post.service_bottom.forEach(e => {
     bottomStr += `<div>
 <div class="uk-border-rounded service_background uk-padding-small uk-padding-remove-bottom">
 <a href="${e.img}" class="uk-inline">
-<img src="${e.img}" alt="">
+<img data-src="${e.img}" alt="" uk-img>
 </a>
 <div class="uk-padding-small uk-padding-remove-horizontal font-size24">${e.name}</div>
 </div>
@@ -56,7 +54,7 @@ var service_bottom_banner=""
 Post.service_less_press.forEach(e => {
     service_bottom_banner += `<div>
 <div class="uk-inline">
-<img src="${e.img}" alt="">
+<img data-src="${e.img}" alt="" uk-img>
 <div class="uk-overlay-primary uk-position-cover uk-border-rounded"></div>
 <div class="uk-overlay uk-position-top uk-light uk-h3 font-size24 uk-text-center text-color">
 ${e.name}

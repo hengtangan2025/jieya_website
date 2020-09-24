@@ -1,5 +1,6 @@
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
+// import '@babel/polyfill'
 // 加载图标插件
 UIkit.use(Icons);
 

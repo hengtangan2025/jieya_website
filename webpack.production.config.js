@@ -2,16 +2,14 @@ var path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');//分离css
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //打包html的插件
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
-
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         index: ['./src/js/index.js', './src/scss/style.scss'],
         article: './src/js/article.js',
-        ploicDy: './src/js/policDynamics.js',
-        service: ["@babel/polyfill",'./src/js/service.js'],
-        home: './src/js/home.js'
+        ploicDy:'./src/js/policDynamics.js',
+        service:'./src/js/service.js',
+        home:'./src/js/home.js'
     },
     output: {
         filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[name].[hash:10].js',
@@ -19,25 +17,16 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new CopyPlugin({
-                patterns: [
-                    {
-                        from: path.resolve(__dirname, 'src/favicon.ico'),
-                        to: path.resolve(__dirname, 'dist'),
-                    }
-                ]
-            }
-        ),
         new MiniCssExtractPlugin({
             filename: 'css/style.[contenthash:10].css'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index', 'home'],
+            chunks: ['index','home'],
             filename: 'index.html',
             template: 'src/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index', 'service'],
+            chunks: ['index','service'],
             filename: 'page/productService/index.html',
             template: 'src/page/productService/index.html'
         }),
@@ -52,7 +41,7 @@ module.exports = {
             template: 'src/page/publicWelfare/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index', 'ploicDy'],
+            chunks: ['index','ploicDy'],
             filename: 'page/policDynamics/index.html',
             template: 'src/page/policDynamics/index.html'
         }),
@@ -62,22 +51,22 @@ module.exports = {
             template: 'src/page/contact/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index', 'article'],
-            filename: 'page/article/index.html',
-            template: 'src/page/article/index.html'
+            chunks: ['index'],
+            filename: 'page/login/index.html',
+            template: 'src/page/login/index.html'
         }),
         new HtmlWebpackPlugin({
-            chunks: ['index'],
-            filename: '404.html',
-            template: 'src/404.html'
-        }),
+            chunks: ['index','article'],
+            filename: 'page/article/index.html',
+            template: 'src/page/article/index.html'
+        })
     ],
     optimization: {
         splitChunks: {
             cacheGroups: {
                 commons: {
                     name: 'commons',
-                    chunks: 'initial',
+                    chunks: ['index'],
                     minSize: 0,
                     minChunks: 2 // 最少引用两次
                 },
@@ -85,7 +74,7 @@ module.exports = {
                     priority: 1, // 权重，权重越高越先抽取
                     name: 'vendors',
                     test: /node_modules/, // 如果你多次引用了node_modules第三方模块,就抽取出来
-                    chunks: 'initial',
+                    chunks: ['index'],
                     minSize: 0,
                     minChunks: 2
                 }
@@ -113,36 +102,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-transform-runtime']
-                    }
-                }
-            },
-            // {
-            //     test: /\.(png|jpg|jpeg|gif|svg)$/,
-            //     use: [{
-            //         loader: 'url-loader',
-            //         options: {
-            //             esModule:false,
-            //             limit: 8*1024,        //把小于8192B的文件打成Base64的格式
-            //             name: '[contenthash:10].[ext]',
-            //             outputPath: 'images/'  //将文件打包至images路径
-            //         }
-            //     }]
-            // },
-            {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
                     esModule: false,
                     name: '[contenthash:10].[ext]',
                     outputPath: 'images/',
-                    publicPath: '../images/'
+                    publicPath:'../images/'
                 }
             },
             {
@@ -188,14 +154,5 @@ module.exports = {
             },
         ],
 
-    },
-    devServer: {
-        contentBase: path.join('dist'),
-        port: 8080,
-        historyApiFallback: true,
-        overlay: true,
-        hot: true,
-        compress: true,
-        host: '0.0.0.0'
     }
 };

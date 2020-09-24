@@ -3,7 +3,7 @@ import * as Post from './post'
 var policStr = ""
 Post.index_banner.forEach(e => {
     policStr += `<li>
-<img src="${e.img}" alt="" uk-cover>
+<img data-src="${e.img}" alt="" uk-cover uk-img>
 </li>`
 })
 //拼接完字符串数组后用innerHTML把它渲染到页面中
@@ -14,7 +14,7 @@ Post.index_section.forEach(e => {
     sectionStr += `<div>
 <div class="uk-card uk-card-body secion_hover border_style uk-border-rounded">
 <div>
-<img src="${e.img}" alt="" class="banner_bottom_image">
+<img data-src="${e.img}" alt="" class="banner_bottom_image" uk-img>
 </div>
 <div class="uk-h3">${e.name}</div>
 <div class="uk-padding uk-padding-remove-horizontal font-size18">${e.dec}</div>
@@ -30,7 +30,7 @@ var sectionStr1 = ''
 Post.index_service.forEach(e => {
     sectionStr1 += `<div class="uk-text-center curson">
 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-    <img src="${e.img}" alt="">
+    <img data-src="${e.img}" alt="" uk-img>
     <div class="uk-overlay-primary uk-position-cover uk-border-rounded"></div>
     <div class="uk-position-center  text-color font-size24">
     <div>${e.name}</div>
@@ -57,7 +57,7 @@ var bottomStr = ""
 Post.index_bottom.forEach(e => {
     bottomStr += `<div>
 <a href="${e.img}" class="uk-inline">
-<img src="${e.img}" alt="" class="policy_image">
+<img data-src="${e.img}" alt="" class="policy_image" uk-img>
 </a>
 </div>`
 })

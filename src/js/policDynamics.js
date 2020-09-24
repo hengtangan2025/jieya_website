@@ -3,10 +3,10 @@ var policStr = ""
 Post.allArticles.forEach(e => {
     policStr += `<div>
 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-<img src='${e.data.img}' alt="" class="uk-transition-scale-up uk-transition-opaque">
+<img data-src='${e.data.img}' alt="" class="uk-transition-scale-up uk-transition-opaque" uk-img>
 <div class="uk-position-bottom-center uk-padding-small uk-padding-remove-vertical policy_content">
 <a class="uk-panel uk-panel-box uk-text-truncate font-size18 text-color uk-margin-remove" href="../page/article?p=${e.name}" uk-tooltip="title: ${e.data.title}; pos: top">${e.data.title}</a>
-<div>${e.data.time}</div>
+<div class="text-color">${e.data.time}</div>
 </div>
 </div>
 </div>`
@@ -18,7 +18,7 @@ var bottomStr = ""
 Post.dynamics_bottom.forEach(e => {
     bottomStr += `<div>
 <a href="${e.img}" class="uk-inline">
-<img src="${e.img}" alt="" class="policy_image">
+<img data-src="${e.img}" alt="" class="policy_image" uk-img>
 </a>
 </div>`
 })
