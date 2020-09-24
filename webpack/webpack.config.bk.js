@@ -3,6 +3,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');//分离css
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //打包html的插件
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+const dist = path.resolve(__dirname, '../dist');
 
 module.exports = {
     mode: 'development',
@@ -15,15 +18,16 @@ module.exports = {
     },
     output: {
         filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[name].[hash:10].js',
-        path: path.resolve(__dirname, 'dist')
+        path: dist
     },
     plugins: [
         new CleanWebpackPlugin(),
+
         new CopyPlugin({
                 patterns: [
                     {
                         from: path.resolve(__dirname, 'src/favicon.ico'),
-                        to: path.resolve(__dirname, 'dist'),
+                        to: dist,
                     }
                 ]
             }
@@ -71,6 +75,7 @@ module.exports = {
             filename: '404.html',
             template: 'src/404.html'
         }),
+        new UglifyJsPlugin()
     ],
     optimization: {
         splitChunks: {
@@ -90,7 +95,8 @@ module.exports = {
                     minChunks: 2
                 }
             }
-        }
+        },
+        minimizer: [new UglifyJsPlugin()]
     },
     module: {
         rules: [
@@ -190,7 +196,7 @@ module.exports = {
 
     },
     devServer: {
-        contentBase: path.join('dist'),
+        contentBase: dist,
         port: 8080,
         historyApiFallback: true,
         overlay: true,

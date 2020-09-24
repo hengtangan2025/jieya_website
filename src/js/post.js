@@ -444,7 +444,7 @@ export const index_section =
             img: require('../images/index_2.png'),
             href_img: require('../images/contact.png'),
             name: '咨询师入驻',
-            dec: '如果您是心理咨询师 欢迎联系客服'
+            dec: '如果您是心理咨询师，欢迎联系客服'
         },
         {
             img: require('../images/index_3.png'),
