@@ -20,10 +20,6 @@ if (idName === 'null') {
         }
     }
 }
-
-
-
-
 var policStr = ""
 Post.service_top.forEach(e => {
     policStr += `<div>

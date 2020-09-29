@@ -7,12 +7,22 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<div class="uk-container uk-align-center" style="vertical-align: middle">
-    <img data-src="./images/404.png" alt="" class="uk-align-center" uk-img>
-    <p class="uk-h2 uk-text-center">很抱歉！页面它不小心迷路了~</p>
-    <div class="uk-align-center uk-text-center">
-        <a class="uk-button uk-button-primary uk-button-large" href="/">返回首页</a>
+<div class="uk-section uk-container uk-align-center">
+    <div class="uk-height-medium  uk-background-cover uk-visible@m" data-src="./images/404_back.png" style="height: 460px;background-size: 100% 100%"  uk-img>
+        <img data-src="./images/404.png" alt="" class="uk-align-center" width="200" height="100" style="padding-top: 80px" uk-img>
+        <div class="uk-align-center uk-text-center" style="margin-top: 150px">
+            <a class="uk-button uk-button-primary uk-button-large" href="/" style="background: #36425F;color: #fff">返回首页</a>
+        </div>
     </div>
+    <div class="uk-height-medium  uk-background-cover uk-hidden@m" data-src="./images/404_back.png" style="background-size: 100% 100%"  uk-img>
+        <img data-src="./images/404.png" alt="" class="uk-align-center" style="padding-top: 30px" width="200" height="100" uk-img>
+        <div class="uk-align-center uk-text-center" style="margin-top: 70px">
+            <a class="uk-button uk-button-large" href="/" style="background: #36425F;color: #fff">返回首页</a>
+        </div>
+    </div>
+</div>
+<div class="uk-height-medium  uk-background-cover uk-visible@s" data-src="./images/404_bottom.png" style="height: 109px;bottom:0;background-size: 100% 100%"  uk-img>
+
 </div>
 </body>
 </html>

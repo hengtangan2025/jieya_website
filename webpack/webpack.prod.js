@@ -3,6 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //打包html的插件
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.common.js');
 const path = require('path');
 const dist = path.resolve(__dirname, '../dist');
@@ -91,6 +92,7 @@ module.exports = merge(common, {
     ],
     optimization: {
         minimizer: [
+            new TerserPlugin(),
             new UglifyJSPlugin({
                 cache: true,
                 parallel: true
@@ -107,5 +109,3 @@ module.exports = merge(common, {
         host: '0.0.0.0'
     }
 });
-
-console.log('prod --- ', module.exports);

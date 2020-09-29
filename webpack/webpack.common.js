@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');//分离css
 const CopyPlugin = require("copy-webpack-plugin");
 const dist = path.resolve(__dirname, '../dist');
 const srcPath = path.resolve(__dirname, '../src');
-console.log('srcPath ---', srcPath)
 module.exports = {
     entry: {
         index: [srcPath + '/js/index.js', srcPath + '/scss/style.scss'],
@@ -16,6 +15,7 @@ module.exports = {
     //     filename: module.exports.mode === 'production' ? 'js/app.[contenthash:10].js' : 'js/app.[name].[hash:10].js',
     //     path: dist
     // },
+
     plugins: [
         new CopyPlugin({
                 patterns: [
