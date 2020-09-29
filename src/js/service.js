@@ -8,7 +8,11 @@ function GetUrlParam(name) {
 
 //使用获取参数方法
 var idName = decodeURI(GetUrlParam("name"));
-
+const [a] = Post.index_service.filter(item => item.anchorLink === idName)
+console.log(a)
+if (!a) {
+    window.location.href = '/404.html';//404
+}
 if (idName === 'null') {
     document.getElementById('mentalHealth').style.display="block";
 }else{
