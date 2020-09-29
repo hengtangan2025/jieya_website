@@ -13,7 +13,8 @@ module.exports = merge(common, {
     mode: 'production',
     output: {
         filename: 'js/app.[contenthash:10].js',
-        path: dist
+        path: dist,
+        publicPath: '/'
     },
     plugins: [
         new CleanWebpackPlugin(),
